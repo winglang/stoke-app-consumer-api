@@ -1,0 +1,11 @@
+{
+    "body": "{\"userId\":\"USER-SUB-1234-JOB-PUT\",\"entityId\":\"USER-SUB-1234-JOB-PUT\",\"companyId\":\"COMP-SUB-1234\",\"itemData\":{\"title\":\"The job title\",\"category\":\"Engineering\",\"jobDescription\":\"Some description\",\"requiredSkills\":[{\"value\":\"eng2\",\"label\":\"eng2\"}],\"optionalSkills\":[{\"value\":\"eng2\",\"label\":\"eng2\"},{\"value\":\"eng1\",\"label\":\"eng1\"}],\"workforceType\":\"\",\"engagementType\":\"Hourly\",\"totalBudget\":\"11112\",\"hourlyBudget\":\"334\",\"weeklyBudget\":\"567\",\"jobStartDate\":\"2019-02-25T13:13:11.108Z\",\"remoteJob\":\"1\",\"jobTimezoneDiff\":\"3\",\"languages\":[{\"value\":\"English\",\"label\":\"English\"}],\"jobRequireIPProtection\":true,\"jobRequireSiteAccess\":true,\"jobRequireSystemAccess\":true,\"jobOtherConstraints\":\"no\"}}",
+    "requestContext": {
+        "identity": {
+            "cognitoIdentityId": "USER-SUB-1234-JOB-PUT"
+        }
+    },
+    "pathParameters": {
+        "id": ""
+    }
+}

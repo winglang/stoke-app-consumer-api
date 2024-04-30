@@ -1,0 +1,20 @@
+# IDE
+.vscode
+.idea
+*.iml
+out
+gen
+.DS_Store
+
+# package directories
+node_modules
+jspm_packages
+
+# Serverless directories
+.serverless
+
+#tests
+tests
+coverage
+.dynamodb/
+*generated_config.json

@@ -1,0 +1,289 @@
+[
+  {
+    "itemId": "comp_offlineContext_cognitoIdentityId",
+    "createdAt": 1565564080605,
+    "companyId": "offlineContext_cognitoIdentityId",
+    "itemData": {
+      "2017": {
+        "1": {
+          "approved": 300000,
+          "committed": 10000,
+          "total": 1000000,
+          "available": 860000,
+          "pending": 100000
+        },
+        "periods": 1
+      },
+      "2018": {
+        "1": {
+          "approved": 300000,
+          "committed": 100000,
+          "total": 2000000,
+          "available": 11000000,
+          "pending": 500000
+        },
+        "2": {
+          "approved": 20000,
+          "committed": 200000,
+          "total": 1000000,
+          "available": 280000,
+          "pending": 500000
+        },
+        "3": {
+          "approved": 20000,
+          "committed": 100000,
+          "total": 1000000,
+          "available": 280000,
+          "pending": 400000
+        },
+        "4": {
+          "approved": 30000,
+          "committed": 20000,
+          "total": 1000000,
+          "available": 127800,
+          "pending": 822200
+        },
+        "periods": 4
+      },
+      "2019": {
+        "1": {
+          "approved": 5000,
+          "committed": 10000,
+          "available": 10000,
+          "total": 50000,
+          "pending": 25000
+        },
+        "2": {
+          "approved": 250,
+          "committed": 5000,
+          "available": 4750,
+          "total": 25000,
+          "pending": 15000
+        },
+        "3": {
+          "approved": 1150,
+          "committed": 22000,
+          "available": 15350,
+          "total": 50000,
+          "pending": 11500
+        },
+        "4": {
+          "approved": 2575,
+          "committed": 10000,
+          "available": 9925,
+          "total": 25000,
+          "pending": 2500
+        },
+        "periods": 4
+      }
+    },
+    "modifiedAt": 1565564080605,
+    "entityId": "offlineContext_cognitoIdentityId",
+    "userId": "offlineContext_cognitoIdentityId"
+  },
+  {
+    "itemId": "entity_offlineContext_cognitoIdentityId_dep_1",
+    "createdAt": 1565564080643,
+    "companyId": "offlineContext_cognitoIdentityId",
+    "itemData": {
+      "2017": {
+        "1": {
+          "approved": 300000,
+          "committed": 10000,
+          "total": 1000000,
+          "available": 860000,
+          "pending": 100000
+        },
+        "periods": 1
+      },
+      "2018": {
+        "1": {
+          "approved": 300000,
+          "committed": 100000,
+          "total": 2000000,
+          "available": 11000000,
+          "pending": 500000
+        },
+        "2": {
+          "approved": 20000,
+          "committed": 200000,
+          "total": 1000000,
+          "available": 280000,
+          "pending": 500000
+        },
+        "3": {
+          "approved": 20000,
+          "committed": 100000,
+          "total": 1000000,
+          "available": 280000,
+          "pending": 400000
+        },
+        "4": {
+          "approved": 30000,
+          "committed": 20000,
+          "total": 1000000,
+          "available": 127800,
+          "pending": 822200
+        },
+        "periods": 4
+      },
+      "2019": {
+        "1": {
+          "approved": 5000,
+          "committed": 10000,
+          "available": 10000,
+          "total": 50000,
+          "pending": 25000
+        },
+        "2": {
+          "approved": 250,
+          "committed": 5000,
+          "available": 4750,
+          "total": 25000,
+          "pending": 15000
+        },
+        "3": {
+          "approved": 1150,
+          "committed": 22000,
+          "available": 15350,
+          "total": 50000,
+          "pending": 11500
+        },
+        "4": {
+          "approved": 2575,
+          "committed": 10000,
+          "available": 9925,
+          "total": 25000,
+          "pending": 2500
+        },
+        "periods": 4
+      }
+    },
+    "modifiedAt": 1565564080643,
+    "entityId": "offlineContext_cognitoIdentityId_dep_1",
+    "userId": "offlineContext_cognitoIdentityId"
+  },
+  {
+    "itemId": "entity_offlineContext_cognitoIdentityId_dep_2",
+    "createdAt": 1565564080643,
+    "companyId": "offlineContext_cognitoIdentityId",
+    "itemData": {
+      "2019": {
+        "1": {
+          "approved": 90000,
+          "committed": 10000,
+          "total": 400000,
+          "available": 400000,
+          "pending": 40000
+        },
+        "2": {
+          "approved": 20000,
+          "committed": 20000,
+          "total": 500000,
+          "available": 500000,
+          "pending": 50000
+        },
+        "3": {
+          "approved": 0,
+          "committed": 0,
+          "total": 500000,
+          "available": 500000,
+          "pending": 0
+        },
+        "4": {
+          "approved": 0,
+          "committed": 0,
+          "total": 500000,
+          "available": 500000,
+          "pending": 0
+        },
+        "periods": 4
+      }
+    },
+    "modifiedAt": 1565564080643,
+    "entityId": "offlineContext_cognitoIdentityId",
+    "userId": "offlineContext_cognitoIdentityId"
+  },
+  {
+    "itemId": "user_offlineContext_cognitoIdentityId",
+    "createdAt": 1565564080643,
+    "companyId": "offlineContext_cognitoIdentityId",
+    "itemData": {
+      "2019": {
+        "1": {
+          "approved": 90000,
+          "committed": 10000,
+          "total": 400000,
+          "pending": 40000,
+          "available": 260000
+        },
+        "2": {
+          "approved": 20000,
+          "committed": 20000,
+          "total": 500000,
+          "pending": 50000,
+          "available": 410000
+        },
+        "3": {
+          "approved": 200000,
+          "committed": 200000,
+          "total": 500000,
+          "pending": 0,
+          "available": 500000
+        },
+        "4": {
+          "approved": 0,
+          "committed": 0,
+          "total": 1000,
+          "pending": 0,
+          "available": 1000
+        },
+        "periods": 4
+      }
+    },
+    "modifiedAt": 1565564080643,
+    "entityId": "offlineContext_cognitoIdentityId",
+    "userId": "offlineContext_cognitoIdentityId"
+  },
+  {
+    "itemId": "user_offlineContext_cognitoIdentityId2",
+    "createdAt": 1565564080643,
+    "companyId": "offlineContext_cognitoIdentityId",
+    "itemData": {
+      "2019": {
+        "1": {
+          "approved": 90000,
+          "committed": 10000,
+          "total": 400000,
+          "pending": 40000,
+          "available": 260000
+        },
+        "2": {
+          "approved": 20000,
+          "committed": 20000,
+          "total": 500000,
+          "pending": 50000,
+          "available": 410000
+        },
+        "3": {
+          "approved": 200000,
+          "committed": 200000,
+          "total": 500000,
+          "pending": 0,
+          "available": 500000
+        },
+        "4": {
+          "approved": 0,
+          "committed": 0,
+          "total": 500000,
+          "pending": 0,
+          "available": 500000
+        },
+        "periods": 4
+      }
+    },
+    "modifiedAt": 1565564080643,
+    "entityId": "offlineContext_cognitoIdentityId",
+    "userId": "offlineContext_cognitoIdentityId2"
+  }
+]

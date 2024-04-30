@@ -1,0 +1,93 @@
+{
+  "name": "stoke-app-consumer-api",
+  "version": "1.0.0",
+  "description": "Stoke App, Consumer API",
+  "main": "handler.js",
+  "scripts": {
+    "test": "cross-env testRemote=false && serverless invoke test",
+    "testremote": "cross-env testRemote=true && serverless invoke test",
+    "dbmigrate": "serverless dynamodb start --migrate",
+    "start": "npm run db:admin & serverless offline start",
+    "debug": "run-script-os",
+    "debug:darwin:linux": "node --inspect $(npm bin -g)/serverless offline start --noTimeout --noAuth --migrate",
+    "debug:win32": "node --inspect \"%USERPROFILE%\\AppData\\Roaming\\npm\\node_modules\\serverless\\bin\\serverless\" offline start --noTimeout --noAuth --migrate",
+    "postinstall": "npm run db:install",
+    "predeploy": "npm run lint",
+    "lint": "eslint --ignore-path .eslintignore .",
+    "deploy": "sls deploy",
+    "db:install": "serverless dynamodb install",
+    "db:admin": "npx dynamodb-admin",
+    "prune": "sls prune -n 10",
+    "update:common": "npm update stoke-app-common-api",
+    "update:s3lib": "npm update stoke-s3lib",
+    "update:chat": "npm update stoke-chat-api",
+    "update:stoke-ai": "npm update stoke-ai",
+    "update:email": "npm update stoke-email",
+    "update:all": "npm run update:common && npm run update:s3lib && npm run update:chat && npm run update:stoke-ai && npm run update:email",
+    "stoke:install": "rm -r node_modules && npm install && npm run update:all || npm install && npm run update:all"
+  },
+  "keywords": [],
+  "author": "hilikpaz",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:stoketalent/stoke-app-consumer-api.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@faker-js/faker": "^8.4.0",
+    "alasql": "^3.1.0",
+    "aws-sdk": "^2.1226.0",
+    "braces": "^2.3.2",
+    "cron-schedule": "^3.0.6",
+    "cross-env": "^5.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.0",
+    "gpt-3-encoder": "^1.1.4",
+    "husky": "^3.1.0",
+    "openai": "^3.2.1",
+    "pdfkit": "^0.12.1",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.8",
+    "run-script-os": "^1.0.5",
+    "serverless": "^3.22.0",
+    "serverless-dynamodb-local": "github:stoketalent/serverless-dynamodb-local#master",
+    "serverless-iam-roles-per-function": "^3.2.0",
+    "serverless-jest-plugin": "github:stoketalent/serverless-jest-plugin#master",
+    "serverless-cors-plugin": "github:stoketalent/serverless-cors-plugin#main",
+    "serverless-latest-layer-version": "^2.1.1",
+    "serverless-log-forwarding": "^1.4.0",
+    "serverless-offline": "^11.0.1",
+    "serverless-plugin-common-excludes": "^3.0.1",
+    "serverless-plugin-offline-dynamodb-stream": "^1.0.19",
+    "serverless-plugin-scripts": "^1.0.2",
+    "serverless-plugin-split-stacks": "^1.11.3",
+    "serverless-prune-plugin": "^2.0.1",
+    "serverless-step-functions": "^3.12.1",
+    "serverless-middleware": "^3.0.0",
+    "sinon": "^7.3.2",
+    "unzipper": "^0.10.5"
+  },
+  "dependencies": {
+    "countries-list": "^2.6.1",
+    "mime-types": "^2.1.31",
+    "node-fetch": "^2.6.7",
+    "stoke-ai": "github:stoketalent/stoke-ai#master",
+    "stoke-app-common-api": "github:stoketalent/stoke-app-common-api#master",
+    "stoke-chat-api": "github:stoketalent/stoke-chat-api#master",
+    "stoke-email": "github:stoketalent/stoke-email#master",
+    "stoke-s3lib": "github:stoketalent/stoke-s3lib#master",
+    "uuid": "^3.3.3",
+    "dayjs": "^1.8.28"
+  },
+  "plugins": [
+    "@babel/plugin-proposal-class-properties"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run lint && npm test"
+    }
+  }
+}

@@ -1,0 +1,283 @@
+[
+    {
+        "itemStatus": "registered",
+        "itemData": {
+            "legalDocuments": [],
+            "firstName": "Ariel",
+            "lastName": "Talent1",
+            "isProviderSelfEmployedTalent": true,
+            "talentProfileData": {
+                "country": "IL"
+            },
+            "providerId": "provider_ARIELTALEN9cd644d0-c2d6-11eb-b9bc-473b7fa98289",
+            "isHireByStoke": false,
+            "email": "ariel+provider@stoketalent.com",
+            "providerName": "Ariel Talent1"
+        },
+        "modifiedAt": 1625012968975,
+        "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+        "createdAt": 1622551257502,
+        "itemId": "talent_provider_ARIELTALEN9cd644d0-c2d6-11eb-b9bc-473b7fa98289talent_9cd66be0-c2d6-11eb-b9bc-473b7fa98289",
+        "createdBy": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+        "modifiedBy": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0"
+    },
+    {
+        "itemStatus": "registered",
+        "itemData": {
+            "legalDocuments": [],
+            "firstName": "Ariel",
+            "lastName": "provider3",
+            "isProviderSelfEmployedTalent": true,
+            "talentProfileData": {
+                "country": "IL"
+            },
+            "providerId": "provider_ARIELPROVI3b018cd0-d2ab-11eb-98c0-31f17b0b9e5a",
+            "isHireByStoke": false,
+            "email": "ariel+provider3@stoketalent.com",
+            "providerName": "Ariel provider3"
+        },
+        "modifiedAt": 1625397317964,
+        "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+        "createdAt": 1624291843614,
+        "itemId": "talent_provider_ARIELPROVI3b018cd0-d2ab-11eb-98c0-31f17b0b9e5atalent_3b01b3e0-d2ab-11eb-98c0-31f17b0b9e5a",
+        "createdBy": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+        "modifiedBy": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0"
+    },
+    {
+        "itemStatus": "registered",
+        "itemData": {
+            "name": "Justine Mraz",
+            "isHireByStoke": false,
+            "isProviderSelfEmployedTalent": false,
+            "talentProfileData": {
+                "country": "IN",
+                "freelancer_id": "90e48317-ce81-11eb-af0e-196ba25dead5",
+                "img": "https://s3.amazonaws.com/uifaces/faces/twitter/itskawsar/128.jpg",
+                "languages": [
+                    {
+                        "name": "US English",
+                        "level": 0
+                    }
+                ],
+                "timezone": 4,
+                "platform_specific": {
+                    "score_last3months": {
+                        "all": 79,
+                        "completion_rate": 0.8983984953132353,
+                        "incomplete": 1,
+                        "on_time": 0.5682257510375763,
+                        "reviews": 93,
+                        "category_ratings": {
+                            "professionalism": 2.1959472429087956,
+                            "hire_again": 0.6273320092825663,
+                            "communication": 0.48878047594471896,
+                            "expertise": 1.5481594769052187,
+                            "quality": 3.334161627040153
+                        },
+                        "incomplete_reviews": 1,
+                        "overall": 3.3444910755224355,
+                        "positive": 53,
+                        "complete": 98,
+                        "on_budget": 0.6929801378512679
+                    },
+                    "score_last12months": {
+                        "all": 96,
+                        "completion_rate": 0.5220782128238067,
+                        "incomplete": 2,
+                        "on_time": 0.7929332220767884,
+                        "reviews": 34,
+                        "category_ratings": {
+                            "professionalism": 2.11465473722827,
+                            "hire_again": 1.1801677104678987,
+                            "communication": 1.828378911287366,
+                            "expertise": 3.7102252811556724,
+                            "quality": 3.0948238409276008
+                        },
+                        "incomplete_reviews": 1,
+                        "overall": 1.5350334568123891,
+                        "positive": 72,
+                        "complete": 39,
+                        "on_budget": 0.5369559331301872
+                    }
+                },
+                "portfolios": {
+                    "icon": "https://www.f-cdn.com/assets/compat/en/assets/freelancer-logo-icon.svg",
+                    "title": "freelancer.com",
+                    "url": "https://www.freelancer.com/freelancers/"
+                },
+                "about": "hi \n\ni am spacial for all about demo generator and have relevant experience.",
+                "description": "hi \n\ni am spacial for all about demo generator and have relevant experience.",
+                "title": "node.js",
+                "platform": "Fiverr",
+                "skills": [
+                    {
+                        "name": "node.js",
+                        "id": 0,
+                        "category": "Factors",
+                        "title": "node.js"
+                    },
+                    {
+                        "name": "Security",
+                        "id": 1,
+                        "category": "Creative",
+                        "title": "Security"
+                    },
+                    {
+                        "name": "Response",
+                        "id": 2,
+                        "category": "Applications",
+                        "title": "Response"
+                    },
+                    {
+                        "name": "Integration",
+                        "id": 3,
+                        "category": "Security",
+                        "title": "Integration"
+                    },
+                    {
+                        "name": "Division",
+                        "id": 4,
+                        "category": "Response",
+                        "title": "Division"
+                    },
+                    {
+                        "name": "Data",
+                        "id": 5,
+                        "category": "Communications",
+                        "title": "Data"
+                    },
+                    {
+                        "name": "Data",
+                        "id": 6,
+                        "category": "Group",
+                        "title": "Data"
+                    },
+                    {
+                        "name": "Tactics",
+                        "id": 7,
+                        "category": "Program",
+                        "title": "Tactics"
+                    },
+                    {
+                        "name": "Security",
+                        "id": 8,
+                        "category": "Operations",
+                        "title": "Security"
+                    },
+                    {
+                        "name": "Optimization",
+                        "id": 9,
+                        "category": "Identity",
+                        "title": "Optimization"
+                    },
+                    {
+                        "name": "Intranet",
+                        "id": 10,
+                        "category": "Optimization",
+                        "title": "Intranet"
+                    }
+                ],
+                "itemId": "talent_provider_DEMO_GENERATORtalent_90e48317-ce81-11eb-af0e-196ba25dead5",
+                "score": {
+                    "all": 190,
+                    "professionalism": 2.9275464584482003,
+                    "rating": 1.7181307518978661,
+                    "incomplete_reviews": 1,
+                    "positive": 1.5664118782236303,
+                    "expertise": 0.44278113022719334,
+                    "quality": 4.079833080067884,
+                    "completion_rate": 0.9717314487632509,
+                    "hire_again": 0.06847810937041565,
+                    "on_time": 0.5790350119547077,
+                    "reviews": 91,
+                    "communication": 1.266767425914609,
+                    "complete": 38,
+                    "on_budget": 0.7239034390981295
+                },
+                "top_skills": [
+                    {
+                        "category": "Integration",
+                        "name": "node.js"
+                    },
+                    {
+                        "category": "Mobility",
+                        "name": "Usability"
+                    },
+                    {
+                        "category": "Infrastructure",
+                        "name": "Interactions"
+                    }
+                ],
+                "portfolio": "https://www.freelancer.com/freelancers/",
+                "hourly_rate": {
+                    "max": 111,
+                    "min": 90
+                },
+                "name": "Justine Mraz",
+                "currency": {
+                    "name": "US Dollar",
+                    "sign": "$",
+                    "code": "USD"
+                },
+                "username": "Elizabeth79"
+            },
+            "providerId": "provider_DEMO_GENERATOR",
+            "providerName": "Marketplaces"
+        },
+        "modifiedAt": 1623837809821,
+        "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+        "createdAt": 1623837809821,
+        "itemId": "talent_provider_DEMO_GENERATORtalent_90e48317-ce81-11eb-af0e-196ba25dead5",
+        "createdBy": "us-east-1:d3f60430-8ed6-4d22-8982-ba73edf8c678",
+        "modifiedBy": "us-east-1:d3f60430-8ed6-4d22-8982-ba73edf8c678"
+    },
+    {
+        "itemStatus": "registered",
+        "itemData": {
+            "legalDocuments": [],
+            "firstName": "Ariel",
+            "lastName": "Talent2",
+            "isProviderSelfEmployedTalent": true,
+            "talentProfileData": {
+                "category": "engineer",
+                "skills": [
+                    {
+                        "sourceId": 15,
+                        "id": "engineer_.net",
+                        "sourceName": "freelancer",
+                        "title": ".net"
+                    },
+                    {
+                        "sourceId": 500,
+                        "id": "engineer_node.js",
+                        "sourceName": "freelancer",
+                        "title": "node.js"
+                    },
+                    {
+                        "sourceId": 1314,
+                        "id": "engineer_react native",
+                        "sourceName": "freelancer",
+                        "title": "react native"
+                    },
+                    {
+                        "sourceId": 759,
+                        "id": "engineer_react.js",
+                        "sourceName": "freelancer",
+                        "title": "react.js"
+                    }
+                ],
+                "country": "IL"
+            },
+            "providerId": "provider_ARIELTALEN689d2280-cde7-11eb-b476-db729ef8421a",
+            "isHireByStoke": false,
+            "email": "ariel+provider2@stoketalent.com",
+            "providerName": "Ariel Talent2"
+        },
+        "modifiedAt": 1624981976523,
+        "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+        "createdAt": 1623767934121,
+        "itemId": "talent_provider_ARIELTALEN689d2280-cde7-11eb-b476-db729ef8421atalent_689d4990-cde7-11eb-b476-db729ef8421a",
+        "createdBy": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+        "modifiedBy": "us-east-1:74d88671-7900-4100-9282-ae6fdf1a9952"
+    }
+]

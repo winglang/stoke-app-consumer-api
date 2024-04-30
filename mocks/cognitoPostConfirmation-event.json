@@ -1,0 +1,11 @@
+{
+    "request": {
+        "userAttributes": {
+            "sub": "8157e7e6-8690-48f8-bc0b-4fb6865e8f6f",
+            "cognito:user_status": "EXTERNAL_PROVIDER"
+        }
+    },
+    "triggerSource": "PostConfirmation_ConfirmSignUp",
+    "userName": "Azure1_Test.Case@devopsstoketalent.onmicrosoft.com",
+    "response": {}
+}

@@ -1,0 +1,11 @@
+{
+    "body": "{\"entityId\":\"USER-SUB-1234\",\"itemStatus\":\"paused\",\"itemData\":{\"title\":\"The modified job title\",\"category\":\"Engineering\",\"jobDescription\":\"Some new description\",\"requiredSkills\":[{\"value\":\"eng3\",\"label\":\"eng4\"}],\"optionalSkills\":[{\"value\":\"eng2\",\"label\":\"eng2\"},{\"value\":\"eng1\",\"label\":\"eng1\"}],\"workforceType\":\"\",\"engagementType\":\"Hourly\",\"totalBudget\":\"222\",\"hourlyBudget\":\"333\",\"weeklyBudget\":\"444\",\"jobStartDate\":\"2019-02-25T13:13:11.108Z\",\"remoteJob\":\"1\",\"jobTimezoneDiff\":\"3\",\"languages\":[{\"value\":\"English\",\"label\":\"English\"}],\"jobRequireIPProtection\":true,\"jobRequireSiteAccess\":true,\"jobRequireSystemAccess\":true,\"jobOtherConstraints\":\"this is a modified post\"}}",
+    "requestContext": {
+        "identity": {
+            "cognitoIdentityId": "USER-SUB-1234"
+        }
+    },
+    "pathParameters": {
+        "id": ""
+    }
+}

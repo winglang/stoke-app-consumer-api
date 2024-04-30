@@ -1,0 +1,10 @@
+{
+    "requestContext": {
+        "identity": {
+            "cognitoIdentityId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0"
+        }
+    },
+    "queryStringParameters": {
+        "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1"
+    }
+}

@@ -1,0 +1,21 @@
+Resources:
+  ApiGatewayCognitoAuthorizer:
+      Type: AWS::ApiGateway::Authorizer
+      Properties:
+        AuthorizerResultTtlInSeconds: 300
+        IdentitySource: method.request.header.Authorization
+        Name: RateLimitAuthorizer
+        RestApiId:
+          Fn::ImportValue: ${self:custom.stage}-${self:custom.consumerApiGatewayService}-restApiId
+        Type: COGNITO_USER_POOLS
+        ProviderARNs:
+          - Fn::Join:
+            - ''
+            - - 'arn:aws:cognito-idp'
+              - ':'
+              - Ref: AWS::Region
+              - ':'
+              - Ref: AWS::AccountId
+              - ':'
+              - userpool/
+              - ${self:custom.consumerUserPoolId}

@@ -1,0 +1,140 @@
+[
+  {
+    "createdAt": 1565099719510,
+    "createdBy": "offlineContext_cognitoIdentityId",
+    "entityId": "offlineContext_cognitoIdentityId",
+    "companyId": "offlineContext_cognitoIdentityId",
+    "itemData": {
+      "optionalSkills": [],
+      "requiredSkills": [],
+      "hiringManagerId": "userpoolid_offlineContext_cognitoIdentityId_hm_3",
+      "talentId": "DEMO_GENERATOR_083dedf4-d7f0-11e9-85af-9d9735b19d87"
+    },
+    "itemId": "job_d3b27320-b851-11e9-abaf-f3832d76ad51",
+    "itemStatus": "autoDraft",
+    "modifiedAt": 1565099720504,
+    "modifiedBy": "offlineContext_cognitoIdentityId",
+    "userId": "offlineContext_cognitoIdentityId"
+  },
+  {
+    "createdAt": 1565099719510,
+    "createdBy": "offlineContext_cognitoIdentityId",
+    "entityId": "offlineContext_cognitoIdentityId",
+    "companyId": "offlineContext_cognitoIdentityId",
+    "itemData": {
+      "optionalSkills": [],
+      "requiredSkills": [],
+      "startTime": 1465099720504,
+      "jobTitle": "Ember Component",
+      "totalBudget": 100,
+      "talentId": "DEMO_GENERATOR_083dedf4-d7f0-11e9-85af-9d9735b19d87"
+    },
+    "itemId": "job_d3b27320-b851-11e9-abaf-f3832d76ad55",
+    "itemStatus": "budgetRequest",
+    "modifiedAt": 1565099720504,
+    "modifiedBy": "offlineContext_cognitoIdentityId",
+    "userId": "offlineContext_cognitoIdentityId2"
+  },
+  {
+    "createdAt": 1565099719510,
+    "createdBy": "offlineContext_cognitoIdentityId",
+    "entityId": "offlineContext_cognitoIdentityId",
+    "companyId": "offlineContext_cognitoIdentityId",
+    "itemData": {
+      "optionalSkills": [],
+      "requiredSkills": [],
+      "startTime": 1565099720504,
+      "jobTitle": "React Component",
+      "totalBudget": 100,
+      "talentId": "DEMO_GENERATOR_083dedf4-d7f0-11e9-85af-9d9735b19d87"
+    },
+    "itemId": "job_d3b27320-b851-11e9-abaf-f3832d76ad56",
+    "itemStatus": "budgetRequest",
+    "modifiedAt": 1565099720504,
+    "modifiedBy": "offlineContext_cognitoIdentityId",
+    "userId": "offlineContext_cognitoIdentityId"
+  },
+  {
+    "createdAt": 1565099719510,
+    "createdBy": "offlineContext_cognitoIdentityId",
+    "entityId": "offlineContext_cognitoIdentityId",
+    "companyId": "offlineContext_cognitoIdentityId",
+    "itemData": {
+      "jobTitle": "Spaceship",
+      "candidates": ["DEMO_GENERATOR_083dedf4-d7f0-11e9-85af-9d9735b19d87"],
+      "optionalSkills": [],
+      "totalBudget": 10000000,
+      "requiredSkills": [],
+      "hiringManagerId": "userpoolid_offlineContext_cognitoIdentityId_hm_1",
+      "talentId": "comp_offlineContext_cognitoIdentityId_2"
+    },
+    "itemId": "job_d3b27320-b851-11e9-abaf-f3832d76ad52",
+    "itemStatus": "Pending",
+    "modifiedAt": 1565099720504,
+    "modifiedBy": "offlineContext_cognitoIdentityId",
+    "userId": "offlineContext_cognitoIdentityId"
+  },
+  {
+    "createdAt": 1565099719510,
+    "createdBy": "offlineContext_cognitoIdentityId",
+    "entityId": "offlineContext_cognitoIdentityId",
+    "companyId": "offlineContext_cognitoIdentityId",
+    "itemData": {
+      "jobTitle": "Vue.js Component",
+      "candidates": ["DEMO_GENERATOR_083dedf4-d7f0-11e9-85af-9d9735b19d87"],
+      "optionalSkills": [],
+      "totalBudget": 100,
+      "requiredSkills": [],
+      "hiringManagerId": "userpoolid_offlineContext_cognitoIdentityId_hm_2",
+      "talentId": "comp_offlineContext_cognitoIdentityId_1",
+      "startTime": 1465099720504
+    },
+    "itemId": "job_d3b27320-b851-11e9-abaf-f3832d76ad53",
+    "itemStatus": "Pending",
+    "modifiedAt": 1565099720504,
+    "modifiedBy": "offlineContext_cognitoIdentityId",
+    "userId": "offlineContext_cognitoIdentityId"
+  },
+  {
+    "createdAt": 1565099719510,
+    "createdBy": "offlineContext_cognitoIdentityId",
+    "entityId": "offlineContext_cognitoIdentityId",
+    "companyId": "offlineContext_cognitoIdentityId",
+    "itemData": {
+      "jobTitle": "Aurelia Component",
+      "candidates": ["DEMO_GENERATOR_083dedf4-d7f0-11e9-85af-9d9735b19d87"],
+      "optionalSkills": [],
+      "totalBudget": 3000000,
+      "requiredSkills": [],
+      "hiringManagerId": "userpoolid_offlineContext_cognitoIdentityId_hm_2",
+      "talentId": "comp_offlineContext_cognitoIdentityId_2",
+      "startTime": 1465099720504
+    },
+    "itemId": "job_e3b27320-b851-11e9-abaf-f3832d76ad53",
+    "itemStatus": "Pending",
+    "modifiedAt": 1565099720504,
+    "modifiedBy": "offlineContext_cognitoIdentityId",
+    "userId": "offlineContext_cognitoIdentityId"
+  },
+  {
+    "createdAt": 1565099719510,
+    "createdBy": "offlineContext_cognitoIdentityId",
+    "entityId": "offlineContext_cognitoIdentityId",
+    "companyId": "offlineContext_cognitoIdentityId",
+    "itemData": {
+      "jobTitle": "Angular Component",
+      "candidates": ["DEMO_GENERATOR_083dedf4-d7f0-11e9-85af-9d9735b19d87"],
+      "optionalSkills": [],
+      "totalBudget": 10000,
+      "requiredSkills": [],
+      "hiringManagerId": "userpoolid_offlineContext_cognitoIdentityId_hm_2",
+      "talentId": "comp_offlineContext_cognitoIdentityId_2",
+      "startTime": 1465099720504
+    },
+    "itemId": "job_f3b27320-b851-11e9-abaf-f3832d76ad53",
+    "itemStatus": "Pending",
+    "modifiedAt": 1565099720504,
+    "modifiedBy": "offlineContext_cognitoIdentityId",
+    "userId": "offlineContext_cognitoIdentityId"
+  }
+]

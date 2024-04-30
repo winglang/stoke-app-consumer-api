@@ -1,0 +1,54 @@
+{
+    "requestContext": {
+        "identity": {
+            "cognitoIdentityId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0"
+        }
+    },
+    "queryStringParameters": {
+        "companyId": "BENESHf81f1020-c2d5-11eb-8c02-8b2c51cad23c",
+        "type": "jobsPage",
+        "filterKey": "active",
+        "tableRequestedFields": [
+            "milestone",
+            "job",
+            "description",
+            "engagementType",
+            "status",
+            "hiringManager",
+            "department",
+            "team",
+            "talentData",
+            "comment",
+            "date",
+            "plannedLocal",
+            "requested",
+            "approved",
+            "requestedDate",
+            "approvedDate",
+            "approvedBy",
+            "stoke::externalApproverEmail",
+            "Milestone tags custom field",
+            "Custom text field",
+            "Custom tag field",
+            "Job second custom field",
+            "Custom text field for jobs on department1",
+            "Milestone text custom field"
+        ],
+        "tableFilters": {
+            "hiringManagers": [],
+            "talents": [],
+            "workspaces": [],
+            "acceptanceStatus": [
+                "APPROVED",
+                "REJECTED"
+            ],
+            "hasActiveMilestones": false,
+            "hasOverdueMilestones": false,
+            "customFields": {
+                "ms_multiselect_Milestone tags custom field": [
+                    "False"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+Resources:
+
+  WebhookQueue:
+    Type: AWS::SQS::Queue
+    Properties:
+      QueueName: ${self:custom.webhookQueueName}
+      MessageRetentionPeriod: 1209600 # 14 day
+      VisibilityTimeout: 600
+      RedrivePolicy:
+        deadLetterTargetArn:
+          Fn::GetAtt:
+            - WebhookDeadLetterQueue
+            - Arn
+        maxReceiveCount: 3
+
+  WebhookDeadLetterQueue:
+    Type: AWS::SQS::Queue
+    Properties:
+      QueueName: ${self:custom.webhookQueueName}-dead-letter-queue
+      MessageRetentionPeriod: 1209600 # 14 days

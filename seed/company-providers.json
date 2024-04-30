@@ -1,0 +1,217 @@
+[
+  {
+    "itemId": "comp_offlineContext_cognitoIdentityId_1",
+    "createdAt": 1565564080605,
+    "companyId": "offlineContext_cognitoIdentityId",
+    "modifiedAt": 1565564080605,
+    "entityId": "offlineContext_cognitoIdentityId_dep_2",
+    "userId": "offlineContext_cognitoIdentityId",
+    "itemStatus": "active",
+    "itemData": {
+      "firstName": "Polly",
+      "lastName": "Carson",
+      "hiringManagerId": "userpoolid_offlineContext_cognitoIdentityId_hm_3",
+      "office": "Valencia 1",
+      "city": "Valencia",
+      "legalDocumentsCount": "2/3",
+      "skill": "Mobile Developer"
+    }
+  },
+  {
+    "itemId": "comp_offlineContext_cognitoIdentityId_2",
+    "createdAt": 1565564080605,
+    "companyId": "offlineContext_cognitoIdentityId",
+    "modifiedAt": 1565564080605,
+    "entityId": "offlineContext_cognitoIdentityId_dep_6",
+    "userId": "offlineContext_cognitoIdentityId",
+    "itemStatus": "active",
+    "itemData": {
+      "firstName": "Lydia",
+      "lastName": "Barker",
+      "hiringManagerId": "userpoolid_offlineContext_cognitoIdentityId_hm_5",
+      "office": "Valencia 2",
+      "city": "Valencia",
+      "legalDocumentsCount": "2/3"
+    }
+  },
+  {
+    "itemId": "comp_offlineContext_cognitoIdentityId_3",
+    "createdAt": 1565564080605,
+    "companyId": "offlineContext_cognitoIdentityId",
+    "modifiedAt": 1565564080605,
+    "entityId": "offlineContext_cognitoIdentityId_dep_1",
+    "userId": "offlineContext_cognitoIdentityId",
+    "itemStatus": "active",
+    "itemData": {
+      "firstName": "Roger",
+      "lastName": "Binwell",
+      "hiringManagerId": "userpoolid_offlineContext_cognitoIdentityId_hm_2",
+      "office": "Remote",
+      "city": "The Hague",
+      "legalDocumentsCount": "3/3"
+    }
+  },
+  {
+    "itemId": "comp_offlineContext_cognitoIdentityId_4",
+    "createdAt": 1565564080605,
+    "companyId": "offlineContext_cognitoIdentityId",
+    "modifiedAt": 1565564080605,
+    "entityId": "offlineContext_cognitoIdentityId_dep_2",
+    "userId": "offlineContext_cognitoIdentityId",
+    "itemStatus": "inactive",
+    "itemData": {
+      "firstName": "Ethan",
+      "lastName": "Brady",
+      "city": "Clinton",
+      "legalDocumentsCount": "2/3"
+    }
+  },
+  {
+    "itemId": "comp_offlineContext_cognitoIdentityId_5",
+    "createdAt": 1565564080605,
+    "companyId": "offlineContext_cognitoIdentityId",
+    "modifiedAt": 1565564080605,
+    "userId": "offlineContext_cognitoIdentityId",
+    "itemStatus": "pending",
+    "itemData": {
+      "firstName": "Matilda",
+      "lastName": "Sullivan",
+      "office": "Remote",
+      "city": "Dallas",
+      "country": "Texas",
+      "legalDocumentsCount": "3/3"
+    }
+  },
+  {
+    "itemId": "comp_offlineContext_cognitoIdentityId_6",
+    "createdAt": 1565564080605,
+    "companyId": "offlineContext_cognitoIdentityId",
+    "modifiedAt": 1565564080605,
+    "entityId": "offlineContext_cognitoIdentityId_dep_7",
+    "userId": "offlineContext_cognitoIdentityId",
+    "itemStatus": "inactive",
+    "itemData": {
+      "firstName": "Cecelia",
+      "lastName": "Delgado",
+      "office": "Remote",
+      "city": "Frankfurt",
+      "country": "Germany",
+      "legalDocumentsCount": "3/3"
+    }
+  },
+  {
+    "itemId": "comp_offlineContext_cognitoIdentityId_7",
+    "createdAt": 1565564080605,
+    "companyId": "offlineContext_cognitoIdentityId",
+    "modifiedAt": 1565564080605,
+    "entityId": "offlineContext_cognitoIdentityId_dep_2",
+    "userId": "offlineContext_cognitoIdentityId",
+    "itemStatus": "inactive",
+    "itemData": {
+      "firstName": "Harold",
+      "lastName": "Francis",
+      "office": "Remote",
+      "city": "Valencia",
+      "country": "Spain",
+      "legalDocumentsCount": "3/3"
+    }
+  },
+  {
+    "itemId": "comp_offlineContext_cognitoIdentityId_8",
+    "createdAt": 1565564080605,
+    "companyId": "offlineContext_cognitoIdentityId",
+    "modifiedAt": 1565564080605,
+    "entityId": "offlineContext_cognitoIdentityId_dep_3",
+    "userId": "offlineContext_cognitoIdentityId",
+    "itemStatus": "inactive",
+    "itemData": {
+      "firstName": "Edwin",
+      "lastName": "Bowman",
+      "office": "Ontario",
+      "city": "Ontario",
+      "country": "Canada",
+      "legalDocumentsCount": "2/3",
+      "skill": "Front End Developer"
+    }
+  },
+  {
+    "itemId": "comp_offlineContext_cognitoIdentityId_9",
+    "createdAt": 1565564080605,
+    "companyId": "offlineContext_cognitoIdentityId",
+    "modifiedAt": 1565564080605,
+    "entityId": "offlineContext_cognitoIdentityId_dep_5",
+    "userId": "offlineContext_cognitoIdentityId",
+    "itemStatus": "inactive",
+    "itemData": {
+      "firstName": "Ina",
+      "lastName": "Carson",
+      "city": "Valencia",
+      "country": "Spain",
+      "legalDocumentsCount": "3/3"
+    }
+  },
+  {
+    "itemId": "comp_offlineContext_cognitoIdentityId_10",
+    "createdAt": 1565564080605,
+    "companyId": "offlineContext_cognitoIdentityId",
+    "modifiedAt": 1565564080605,
+    "entityId": "offlineContext_cognitoIdentityId_dep_4",
+    "userId": "offlineContext_cognitoIdentityId",
+    "itemStatus": "pending",
+    "itemData": {
+      "firstName": "Frank",
+      "lastName": "Waters",
+      "city": "Valencia",
+      "legalDocumentsCount": "2/3"
+    }
+  },
+  {
+    "itemId": "comp_offlineContext_cognitoIdentityId_11",
+    "createdAt": 1565564080605,
+    "companyId": "offlineContext_cognitoIdentityId",
+    "modifiedAt": 1565564080605,
+    "entityId": "offlineContext_cognitoIdentityId_dep_5",
+    "userId": "offlineContext_cognitoIdentityId",
+    "itemStatus": "active",
+    "itemData": {
+      "firstName": "Jack",
+      "lastName": "Hirsh",
+      "city": "Valencia",
+      "country": "Spain",
+      "legalDocumentsCount": "3/3"
+    }
+  },
+  {
+    "itemId": "comp_offlineContext_cognitoIdentityId_12",
+    "createdAt": 1565564080605,
+    "companyId": "offlineContext_cognitoIdentityId",
+    "modifiedAt": 1565564080605,
+    "entityId": "offlineContext_cognitoIdentityId_dep_2",
+    "userId": "offlineContext_cognitoIdentityId",
+    "itemStatus": "pending",
+    "itemData": {
+      "firstName": "Gary",
+      "lastName": "McCormick",
+      "office": "Moscow",
+      "city": "Moscow",
+      "country": "Russia",
+      "legalDocumentsCount": "2/3"
+    }
+  },
+  {
+    "itemId": "comp_offlineContext_cognitoIdentityId_13",
+    "createdAt": 1565564080605,
+    "companyId": "offlineContext_cognitoIdentityId",
+    "modifiedAt": 1565564080605,
+    "entityId": "offlineContext_cognitoIdentityId_dep_2",
+    "userId": "offlineContext_cognitoIdentityId",
+    "itemStatus": "inactive",
+    "itemData": {
+      "firstName": "Billy",
+      "lastName": "Higgins",
+      "city": "Frankfurt",
+      "country": "Germany",
+      "legalDocumentsCount": "2/3"
+    }
+  }
+]

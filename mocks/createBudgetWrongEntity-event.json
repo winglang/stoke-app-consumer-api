@@ -1,0 +1,14 @@
+{
+    "body": "{\"entityId\":\"no-such-entity\",\"totalBudgetAmount\":5}",
+    "requestContext": {
+        "identity": {
+            "cognitoIdentityId": "USER-SUB-1234-BUDGET-REM"
+        }
+    },
+    "pathParameters": {
+        "id": ""
+    },
+    "queryStringParameters": {
+        "entityId": "no-such-entity"
+    }
+}

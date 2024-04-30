@@ -1,0 +1,12 @@
+{
+    "requestContext": {
+        "identity": {
+            "cognitoIdentityId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0"
+        }
+    },
+    "queryStringParameters": {
+        "companyId": "BENESHf81f1020-c2d5-11eb-8c02-8b2c51cad23c",
+        "type": "jobsPage",
+        "reportType": "offer"
+    }
+}

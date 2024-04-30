@@ -1,0 +1,20 @@
+{
+    "requestContext": {
+        "identity": {
+            "cognitoIdentityId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0"
+        }
+    },
+    "body": {
+        "companyId": "BENESHf81f1020-c2d5-11eb-8c02-8b2c51cad23c",
+        "amount": 3401.43,
+        "operationType":"CTA_RED_WORKFORCE_COMPLIANCE",
+        "date": 1565993299379,
+        "comment": "Test1111",
+        "infoObject": {
+            "name": "Test"
+        },
+        "jobId": "job_b4256d50-8365-11ec-854b-8bdf71dff242",
+        "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045",
+        "conversationId": "ceb4bb0fde3cae5e8b34"
+    }
+}

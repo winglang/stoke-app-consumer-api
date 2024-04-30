@@ -1,0 +1,1347 @@
+Resources:
+  skillIdsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ${self:custom.skillIdsTableName}
+      AttributeDefinitions:
+        - AttributeName: itemId
+          AttributeType: S
+      KeySchema:
+        - AttributeName: itemId
+          KeyType: HASH
+      # Set the capacity based on the stage
+      ProvisionedThroughput:
+        ReadCapacityUnits: ${self:custom.tableThroughput}
+        WriteCapacityUnits: ${self:custom.tableThroughput}
+  jobSkillIdsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ${self:custom.jobSkillIdsTableName}
+      AttributeDefinitions:
+        - AttributeName: itemStatus
+          AttributeType: S
+        - AttributeName: itemId
+          AttributeType: S
+      KeySchema:
+        - AttributeName: itemStatus
+          KeyType: HASH
+        - AttributeName: itemId
+          KeyType: RANGE
+      ProvisionedThroughput:
+        ReadCapacityUnits: ${self:custom.tableThroughput}
+        WriteCapacityUnits: ${self:custom.tableThroughput}
+  wsConnectionsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ${self:custom.wsConnectionsTableName}
+      AttributeDefinitions:
+        - AttributeName: itemId
+          AttributeType: S
+        - AttributeName: userId
+          AttributeType: S
+        - AttributeName: createdAt
+          AttributeType: N
+        - AttributeName: itemStatus
+          AttributeType: S
+      KeySchema:
+        - AttributeName: itemId
+          KeyType: HASH
+      # Set the capacity based on the stage
+      ProvisionedThroughput:
+        ReadCapacityUnits: ${self:custom.tableThroughput}
+        WriteCapacityUnits: ${self:custom.tableThroughput}
+      StreamSpecification:
+        StreamViewType: NEW_AND_OLD_IMAGES
+      GlobalSecondaryIndexes:
+        - IndexName: gsiItemsByUserIdAndCreatedAt
+          KeySchema:
+            - AttributeName: userId
+              KeyType: HASH
+            - AttributeName: createdAt
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - itemStatus
+              - itemId
+              - entityId
+              - itemData
+              - userId
+              - modifiedAt
+              - companyId
+              - createdAt
+              - itemScope
+              - createdBy
+              - modifiedBy
+            ProjectionType: INCLUDE
+          # Set the capacity based on the stage
+          ProvisionedThroughput:
+            ReadCapacityUnits: ${self:custom.tableThroughput}
+            WriteCapacityUnits: ${self:custom.tableThroughput}
+        - IndexName: gsiItemsByItemStatusAndCreatedAt
+          KeySchema:
+            - AttributeName: itemStatus
+              KeyType: HASH
+            - AttributeName: createdAt
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - itemStatus
+              - itemId
+              - entityId
+              - itemData
+              - userId
+              - modifiedAt
+              - companyId
+              - createdAt
+              - itemScope
+              - createdBy
+              - modifiedBy
+            ProjectionType: INCLUDE
+          ProvisionedThroughput:
+            ReadCapacityUnits: ${self:custom.tableThroughput}
+            WriteCapacityUnits: ${self:custom.tableThroughput}
+  ConsumerUsersTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ${self:custom.consumerAuthTableName}
+      AttributeDefinitions:
+        - AttributeName: userId
+          AttributeType: S
+        - AttributeName: entityId
+          AttributeType: S
+        - AttributeName: companyId
+          AttributeType: S
+      KeySchema:
+        - AttributeName: userId
+          KeyType: HASH
+        - AttributeName: entityId
+          KeyType: RANGE
+      # Set the capacity based on the stage
+      ProvisionedThroughput:
+        ReadCapacityUnits: ${self:custom.tableThroughput}
+        WriteCapacityUnits: ${self:custom.tableThroughput}
+      GlobalSecondaryIndexes:
+        - IndexName: gsiItemsByCompanyId
+          KeySchema:
+            - AttributeName: companyId
+              KeyType: HASH
+          Projection:
+            NonKeyAttributes:
+              - itemId
+              - entityId
+              - companyId
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+              - itemStatus
+              - itemData
+              - userId
+              - itemScope
+            ProjectionType: INCLUDE
+          # Set the capacity based on the stage
+          ProvisionedThroughput:
+            ReadCapacityUnits: ${self:custom.tableThroughput}
+            WriteCapacityUnits: ${self:custom.tableThroughput}
+        - IndexName: gsiUsersByEntityId
+          KeySchema:
+            - AttributeName: entityId
+              KeyType: HASH
+          Projection:
+            NonKeyAttributes:
+              - userId
+              - companyId
+              - entityId
+              - itemData
+              - itemStatus
+              - modifiedAt
+              - createdAt
+              - itemScope
+              - itemId
+              - createdBy
+              - modifiedBy
+            ProjectionType: INCLUDE
+          # Set the capacity based on the stage
+          ProvisionedThroughput:
+            ReadCapacityUnits: ${self:custom.tableThroughput}
+            WriteCapacityUnits: ${self:custom.tableThroughput}
+        - IndexName: gsiItemsByCompanyId_V2
+          KeySchema:
+            - AttributeName: companyId
+              KeyType: HASH
+          Projection:
+            NonKeyAttributes:
+              - itemId
+              - entityId
+              - companyId
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+              - itemStatus
+              - itemData
+              - userId
+              - itemScope
+              - tags
+            ProjectionType: INCLUDE
+          # Set the capacity based on the stage
+          ProvisionedThroughput:
+            ReadCapacityUnits: ${self:custom.tableThroughput}
+            WriteCapacityUnits: ${self:custom.tableThroughput}
+        - IndexName: gsiUsersByEntityId_V2
+          KeySchema:
+            - AttributeName: entityId
+              KeyType: HASH
+          Projection:
+            NonKeyAttributes:
+              - userId
+              - companyId
+              - entityId
+              - itemData
+              - itemStatus
+              - modifiedAt
+              - createdAt
+              - itemScope
+              - itemId
+              - createdBy
+              - modifiedBy
+              - tags
+            ProjectionType: INCLUDE
+          # Set the capacity based on the stage
+          ProvisionedThroughput:
+            ReadCapacityUnits: ${self:custom.tableThroughput}
+            WriteCapacityUnits: ${self:custom.tableThroughput}
+
+  companiesTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ${self:custom.companiesTable}
+      AttributeDefinitions:
+        - AttributeName: entityId
+          AttributeType: S
+        - AttributeName: itemId
+          AttributeType: S
+        - AttributeName: userId
+          AttributeType: S
+        - AttributeName: itemStatus
+          AttributeType: S
+      KeySchema:
+        - AttributeName: itemId
+          KeyType: HASH
+      # Set the capacity based on the stage
+      ProvisionedThroughput:
+        ReadCapacityUnits: ${self:custom.tableThroughput}
+        WriteCapacityUnits: ${self:custom.tableThroughput}
+      GlobalSecondaryIndexes:
+        - IndexName: gsiItemByUserId
+          KeySchema:
+            - AttributeName: userId
+              KeyType: HASH
+            - AttributeName: itemId
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - itemStatus
+              - itemId
+              - entityId
+              - itemData
+              - userId
+              - modifiedAt
+              - companyId
+              - createdAt
+              - itemScope
+              - createdBy
+              - modifiedBy
+            ProjectionType: INCLUDE
+          # Set the capacity based on the stage
+          ProvisionedThroughput:
+            ReadCapacityUnits: ${self:custom.tableThroughput}
+            WriteCapacityUnits: ${self:custom.tableThroughput}
+        - IndexName: gsiItemByEntityId
+          KeySchema:
+            - AttributeName: entityId
+              KeyType: HASH
+          Projection:
+            NonKeyAttributes:
+              - itemId
+              - entityId
+              - companyId
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+              - itemStatus
+              - itemData
+              - userId
+              - itemScope
+            ProjectionType: INCLUDE
+          # Set the capacity based on the stage
+          ProvisionedThroughput:
+            ReadCapacityUnits: ${self:custom.tableThroughput}
+            WriteCapacityUnits: ${self:custom.tableThroughput}
+        - IndexName: gsiItemByItemStatus
+          KeySchema:
+            - AttributeName: itemStatus
+              KeyType: HASH
+            - AttributeName: itemId
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - itemId
+              - entityId
+              - companyId
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+              - itemStatus
+              - itemData
+              - userId
+              - itemScope
+            ProjectionType: INCLUDE
+          # Set the capacity based on the stage
+          ProvisionedThroughput:
+            ReadCapacityUnits: ${self:custom.tableThroughput}
+            WriteCapacityUnits: ${self:custom.tableThroughput}
+  customersTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ${self:custom.customersTable}
+      AttributeDefinitions:
+        - AttributeName: companyId
+          AttributeType: S
+        - AttributeName: itemId
+          AttributeType: S
+        - AttributeName: userId
+          AttributeType: S
+        - AttributeName: itemStatus
+          AttributeType: S
+      KeySchema:
+        - AttributeName: itemId
+          KeyType: HASH
+      # Set the capacity based on the stage
+      ProvisionedThroughput:
+        ReadCapacityUnits: ${self:custom.tableThroughput}
+        WriteCapacityUnits: ${self:custom.tableThroughput}
+      StreamSpecification:
+          StreamViewType: NEW_AND_OLD_IMAGES
+      GlobalSecondaryIndexes:
+        - IndexName: gsiItemByUserId
+          KeySchema:
+            - AttributeName: userId
+              KeyType: HASH
+            - AttributeName: itemId
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - itemStatus
+              - itemId
+              - itemData
+              - entityId
+              - userId
+              - modifiedAt
+              - companyId
+              - createdAt
+              - itemScope
+              - createdBy
+              - modifiedBy
+            ProjectionType: INCLUDE
+          # Set the capacity based on the stage
+          ProvisionedThroughput:
+            ReadCapacityUnits: ${self:custom.tableThroughput}
+            WriteCapacityUnits: ${self:custom.tableThroughput}
+        - IndexName: gsiItemsByCompanyId
+          KeySchema:
+            - AttributeName: companyId
+              KeyType: HASH
+          Projection:
+            NonKeyAttributes:
+              - itemId
+              - entityId
+              - companyId
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+              - itemStatus
+              - itemData
+              - userId
+              - itemScope
+            ProjectionType: INCLUDE
+          # Set the capacity based on the stage
+          ProvisionedThroughput:
+            ReadCapacityUnits: ${self:custom.tableThroughput}
+            WriteCapacityUnits: ${self:custom.tableThroughput}
+        - IndexName: gsiItemByItemStatus
+          KeySchema:
+            - AttributeName: itemStatus
+              KeyType: HASH
+            - AttributeName: itemId
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - itemId
+              - entityId
+              - companyId
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+              - itemStatus
+              - itemData
+              - userId
+              - itemScope
+            ProjectionType: INCLUDE
+          # Set the capacity based on the stage
+          ProvisionedThroughput:
+            ReadCapacityUnits: ${self:custom.tableThroughput}
+            WriteCapacityUnits: ${self:custom.tableThroughput}
+        - IndexName: gsiItemByUserId_V2
+          KeySchema:
+            - AttributeName: userId
+              KeyType: HASH
+            - AttributeName: itemId
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - itemStatus
+              - itemId
+              - itemData
+              - entityId
+              - userId
+              - modifiedAt
+              - companyId
+              - createdAt
+              - itemScope
+              - createdBy
+              - modifiedBy
+              - tags
+            ProjectionType: INCLUDE
+          # Set the capacity based on the stage
+          ProvisionedThroughput:
+            ReadCapacityUnits: ${self:custom.tableThroughput}
+            WriteCapacityUnits: ${self:custom.tableThroughput}
+        - IndexName: gsiItemsByCompanyId_V2
+          KeySchema:
+            - AttributeName: companyId
+              KeyType: HASH
+          Projection:
+            NonKeyAttributes:
+              - itemId
+              - entityId
+              - companyId
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+              - itemStatus
+              - itemData
+              - userId
+              - itemScope
+              - tags
+            ProjectionType: INCLUDE
+          # Set the capacity based on the stage
+          ProvisionedThroughput:
+            ReadCapacityUnits: ${self:custom.tableThroughput}
+            WriteCapacityUnits: ${self:custom.tableThroughput}
+        - IndexName: gsiItemByItemStatus_V2
+          KeySchema:
+            - AttributeName: itemStatus
+              KeyType: HASH
+            - AttributeName: itemId
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - itemId
+              - entityId
+              - companyId
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+              - itemStatus
+              - itemData
+              - userId
+              - itemScope
+              - tags
+            ProjectionType: INCLUDE
+          # Set the capacity based on the stage
+          ProvisionedThroughput:
+            ReadCapacityUnits: ${self:custom.tableThroughput}
+            WriteCapacityUnits: ${self:custom.tableThroughput}
+        - IndexName: gsiItemByItemStatus_PrivateData
+          KeySchema:
+            - AttributeName: itemStatus
+              KeyType: HASH
+            - AttributeName: itemId
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - itemId
+              - entityId
+              - companyId
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+              - itemStatus
+              - itemData
+              - userId
+              - itemScope
+              - tags
+              - itemPrivateData
+            ProjectionType: INCLUDE
+          ProvisionedThroughput:
+            ReadCapacityUnits: ${self:custom.tableThroughput}
+            WriteCapacityUnits: ${self:custom.tableThroughput}
+            
+  # Consumer side admin users
+  CompanyProvidersTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ${self:custom.companyProvidersTableName}
+      AttributeDefinitions:
+        - AttributeName: companyId
+          AttributeType: S
+        - AttributeName: itemId
+          AttributeType: S
+        - AttributeName: entityId
+          AttributeType: S
+        - AttributeName: externalUserId
+          AttributeType: S
+        - AttributeName: itemStatus
+          AttributeType: S
+      KeySchema:
+        - AttributeName: companyId
+          KeyType: HASH
+        - AttributeName: itemId
+          KeyType: RANGE
+      BillingMode: PAY_PER_REQUEST
+      StreamSpecification:
+          StreamViewType: NEW_AND_OLD_IMAGES
+      GlobalSecondaryIndexes:
+        - IndexName: gsiItemByEntityIdAndItemId
+          KeySchema:
+            - AttributeName: entityId
+              KeyType: HASH  
+            - AttributeName: itemId
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - itemId
+              - entityId
+              - itemData
+              - companyId
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+              - itemStatus
+              - userId
+              - itemScope
+            ProjectionType: INCLUDE
+        - IndexName: gsiItemByExternalUserId
+          KeySchema:
+            - AttributeName: externalUserId
+              KeyType: HASH
+            - AttributeName: companyId
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - itemId
+              - entityId
+              - itemData
+              - companyId
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+              - itemStatus
+              - userId
+              - itemScope
+            ProjectionType: INCLUDE
+        - IndexName: gsiItemByExternalUserId_V2
+          KeySchema:
+            - AttributeName: externalUserId
+              KeyType: HASH
+            - AttributeName: companyId
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - itemId
+              - entityId
+              - itemData
+              - companyId
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+              - itemStatus
+              - userId
+              - itemScope
+              - tags
+            ProjectionType: INCLUDE
+        - IndexName: gsiItemsByItemStatusAndItemId
+          KeySchema:
+            - AttributeName: itemStatus
+              KeyType: HASH
+            - AttributeName: itemId
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - itemId
+              - entityId
+              - itemData
+              - companyId
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+              - itemStatus
+              - userId
+              - itemScope
+            ProjectionType: INCLUDE
+  #Jobs by entityId
+  JobsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ${self:custom.jobsTableName}
+      AttributeDefinitions:
+        - AttributeName: entityId
+          AttributeType: S
+        - AttributeName: itemId
+          AttributeType: S
+        - AttributeName: companyId
+          AttributeType: S
+        - AttributeName: externalUserId
+          AttributeType: S
+        - AttributeName: talentId
+          AttributeType: S
+        - AttributeName: poItemId
+          AttributeType: S
+        - AttributeName: poFeesItemId
+          AttributeType: S
+        - AttributeName: modifiedAt
+          AttributeType: N
+        - AttributeName: itemStatus
+          AttributeType: S
+      KeySchema:
+        - AttributeName: entityId
+          KeyType: HASH
+        - AttributeName: itemId
+          KeyType: RANGE
+      BillingMode: PAY_PER_REQUEST
+      StreamSpecification:
+          StreamViewType: NEW_AND_OLD_IMAGES
+      GlobalSecondaryIndexes:
+        # SecondaryIndex for querying by companyId and ItemId
+        - IndexName: gsiItemsByCompanyIdAndItemId
+          KeySchema:
+            - AttributeName: companyId
+              KeyType: HASH
+            - AttributeName: itemId
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - userId
+              - itemScope
+              - itemData
+              - entityId
+              - itemStatus
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+              - itemPrivateData
+            ProjectionType: INCLUDE
+        # SecondaryIndex for querying by companyId and poItemId
+        - IndexName: gsiItemsByCompanyIdAndPOItemId
+          KeySchema:
+            - AttributeName: companyId
+              KeyType: HASH
+            - AttributeName: poItemId
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - userId
+              - itemScope
+              - itemData
+              - entityId
+              - itemStatus
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+            ProjectionType: INCLUDE
+        # SecondaryIndex for querying by companyId and poFeesItemId
+        - IndexName: gsiItemsByCompanyIdAndPOFeesItemId
+          KeySchema:
+            - AttributeName: companyId
+              KeyType: HASH
+            - AttributeName: poFeesItemId
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - itemId
+              - userId
+              - itemData
+              - entityId
+              - talentId
+              - itemStatus
+            ProjectionType: INCLUDE
+        - IndexName: gsiItemsByExternalUserId
+          KeySchema:
+            - AttributeName: externalUserId
+              KeyType: HASH
+            - AttributeName: itemId
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - companyId
+              - userId
+              - itemScope
+              - itemData
+              - entityId
+              - itemStatus
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+            ProjectionType: INCLUDE
+        - IndexName: gsiJobById_V2
+          KeySchema:
+            - AttributeName: itemId
+              KeyType: HASH
+            - AttributeName: entityId
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+              - itemStatus
+              - userId
+              - tags
+            ProjectionType: INCLUDE
+        - IndexName: gsiItemsByCompanyIdAndItemId_V2
+          KeySchema:
+            - AttributeName: companyId
+              KeyType: HASH
+            - AttributeName: itemId
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - userId
+              - itemScope
+              - itemData
+              - entityId
+              - itemStatus
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+              - itemPrivateData
+              - tags
+            ProjectionType: INCLUDE
+        - IndexName: gsiItemsByCompanyIdAndTalentId_V2
+          KeySchema:
+            - AttributeName: companyId
+              KeyType: HASH
+            - AttributeName: talentId
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - itemId
+              - userId
+              - itemScope
+              - itemData
+              - entityId
+              - itemStatus
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+              - tags
+            ProjectionType: INCLUDE
+        - IndexName: gsiViewDataByCompanyIdAndItemId
+          KeySchema:
+            - AttributeName: companyId
+              KeyType: HASH
+            - AttributeName: itemId
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - userId
+              - itemScope
+              - itemData
+              - viewData
+              - entityId
+              - itemStatus
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+              - talentId
+              - jobTitle
+              - totalPlanned
+              - totalRequested
+              - totalActual
+              - tags
+            ProjectionType: INCLUDE
+        - IndexName: gsiViewDataByCompanyIdAndItemId_V2
+          KeySchema:
+            - AttributeName: companyId
+              KeyType: HASH
+            - AttributeName: itemId
+              KeyType: RANGE
+          Projection:
+            ProjectionType: ALL
+        - IndexName: gsiItemsByExternalUserId_V2
+          KeySchema:
+            - AttributeName: externalUserId
+              KeyType: HASH
+            - AttributeName: itemId
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - companyId
+              - userId
+              - itemScope
+              - itemData
+              - entityId
+              - itemStatus
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+              - tags
+            ProjectionType: INCLUDE
+        # SecondaryIndex meant for querying by itemStatus and ModifiedAt time
+        - IndexName: gsiItemsByItemStatusAndModifiedAt
+          KeySchema:
+            - AttributeName: itemStatus
+              KeyType: HASH
+            - AttributeName: modifiedAt
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - companyId
+              - userId
+              - itemScope
+              - itemData
+              - entityId
+              - createdAt
+              - createdBy
+              - modifiedBy
+              - tags
+            ProjectionType: INCLUDE
+
+  #Bids by itemId
+  BidsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ${self:custom.bidsTableName}
+      AttributeDefinitions:
+        - AttributeName: entityId
+          AttributeType: S
+        - AttributeName: itemId
+          AttributeType: S
+      KeySchema:
+        - AttributeName: entityId
+          KeyType: HASH
+        - AttributeName: itemId
+          KeyType: RANGE
+      # Set the capacity based on the stage
+      ProvisionedThroughput:
+        ReadCapacityUnits: ${self:custom.tableThroughput}
+        WriteCapacityUnits: ${self:custom.tableThroughput}
+      StreamSpecification:
+          StreamViewType: NEW_AND_OLD_IMAGES        
+  TalentsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ${self:custom.talentsTableName}
+      AttributeDefinitions:
+        - AttributeName: itemId
+          AttributeType: S
+      KeySchema:
+        - AttributeName: itemId
+          KeyType: HASH
+      # Set the capacity based on the stage
+      ProvisionedThroughput:
+        ReadCapacityUnits: ${self:custom.tableThroughput}
+        WriteCapacityUnits: ${self:custom.tableThroughput}
+  LedgerTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ${self:custom.ledgerTableName}
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: entityId
+          AttributeType: S
+        - AttributeName: itemId
+          AttributeType: N
+        - AttributeName: companyId
+          AttributeType: S
+        - AttributeName: jobId
+          AttributeType: S
+      KeySchema:
+        - AttributeName: entityId
+          KeyType: HASH
+        - AttributeName: itemId
+          KeyType: RANGE
+      StreamSpecification:
+        StreamViewType: NEW_AND_OLD_IMAGES
+      GlobalSecondaryIndexes:
+        - IndexName: gsiItemsByCompanyIdAndItemId
+          KeySchema:
+            - AttributeName: companyId
+              KeyType: HASH
+            - AttributeName: itemId
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - userId
+              - itemData
+              - entityId
+              - itemStatus
+              - itemScope
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+            ProjectionType: INCLUDE
+        - IndexName: gsiItemsByCompanyIdAndJobId
+          KeySchema:
+            - AttributeName: companyId
+              KeyType: HASH
+            - AttributeName: jobId
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - userId
+              - itemData
+              - entityId
+              - itemStatus
+              - itemScope
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+            ProjectionType: INCLUDE
+        - IndexName: gsiItemsByEntityIdAndJobId
+          KeySchema:
+            - AttributeName: entityId
+              KeyType: HASH
+            - AttributeName: jobId
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - userId
+              - itemData
+              - companyId
+              - itemStatus
+              - itemScope
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+            ProjectionType: INCLUDE
+  SettingsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ${self:custom.settingsTableName}
+      AttributeDefinitions:
+        - AttributeName: itemId
+          AttributeType: S
+        - AttributeName: companyId
+          AttributeType: S
+        - AttributeName: itemStatus
+          AttributeType: S
+        - AttributeName: userId
+          AttributeType: S
+      KeySchema:
+        - AttributeName: itemId
+          KeyType: HASH
+      ProvisionedThroughput:
+        ReadCapacityUnits: ${self:custom.tableThroughput}
+        WriteCapacityUnits: ${self:custom.tableThroughput}
+      StreamSpecification:
+          StreamViewType: NEW_AND_OLD_IMAGES  
+      # SecondaryIndex for querying by companyId and ItemId
+      GlobalSecondaryIndexes:
+        - IndexName: gsiItemsByCompanyIdAndItemId
+          KeySchema:
+            - AttributeName: companyId
+              KeyType: HASH
+            - AttributeName: itemId
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - itemData
+              - entityId
+              - itemStatus
+              - itemScope
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+              - userId
+            ProjectionType: INCLUDE
+          # Set the capacity based on the stage
+          ProvisionedThroughput:
+            ReadCapacityUnits: ${self:custom.tableThroughput}
+            WriteCapacityUnits: ${self:custom.tableThroughput}
+        - IndexName: gsiItemsByCompanyIdAndUserId
+          KeySchema:
+            - AttributeName: companyId
+              KeyType: HASH
+            - AttributeName: userId
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - itemId
+              - itemData
+              - entityId
+              - itemStatus
+              - itemScope
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+            ProjectionType: INCLUDE
+          # Set the capacity based on the stage
+          ProvisionedThroughput:
+            ReadCapacityUnits: ${self:custom.tableThroughput}
+            WriteCapacityUnits: ${self:custom.tableThroughput}
+        - IndexName: gsiItemsByItemStatusAndItemId
+          KeySchema:
+            - AttributeName: itemStatus
+              KeyType: HASH
+            - AttributeName: itemId
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - companyId
+              - itemData
+              - entityId
+              - itemScope
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+              - userId
+            ProjectionType: INCLUDE
+          ProvisionedThroughput:
+            ReadCapacityUnits: ${self:custom.tableThroughput}
+            WriteCapacityUnits: ${self:custom.tableThroughput}
+  BudgetsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ${self:custom.budgetsTableName}
+      AttributeDefinitions:
+        - AttributeName: entityId
+          AttributeType: S
+        - AttributeName: companyId
+          AttributeType: S
+        - AttributeName: itemId
+          AttributeType: S
+      KeySchema:
+        - AttributeName: entityId
+          KeyType: HASH
+        - AttributeName: itemId
+          KeyType: RANGE
+      # Set the capacity based on the stage
+      ProvisionedThroughput:
+        ReadCapacityUnits: ${self:custom.tableThroughput}
+        WriteCapacityUnits: ${self:custom.tableThroughput}  
+      StreamSpecification:
+          StreamViewType: NEW_AND_OLD_IMAGES
+      # SecondaryIndex for querying by companyId and ItemId
+      GlobalSecondaryIndexes:
+        - IndexName: gsiItemsByCompanyIdAndItemId
+          KeySchema:
+            - AttributeName: companyId
+              KeyType: HASH
+            - AttributeName: itemId
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - userId
+              - itemData
+              - entityId
+              - itemStatus
+              - itemScope
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+            ProjectionType: INCLUDE
+          ProvisionedThroughput:
+            ReadCapacityUnits: ${self:custom.tableThroughput}
+            WriteCapacityUnits: ${self:custom.tableThroughput}
+        - IndexName: gsiItemsByCompanyIdAndItemId_V2
+          KeySchema:
+            - AttributeName: companyId
+              KeyType: HASH
+            - AttributeName: itemId
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - userId
+              - itemData
+              - entityId
+              - itemStatus
+              - itemScope
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+              - validFrom
+              - validTo
+              - available
+              - itemPrivateData
+            ProjectionType: INCLUDE
+          ProvisionedThroughput:
+            ReadCapacityUnits: ${self:custom.tableThroughput}
+            WriteCapacityUnits: ${self:custom.tableThroughput}
+  UserNotificationsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ${self:custom.userNotificationsTableName}
+      AttributeDefinitions:
+        - AttributeName: itemId
+          AttributeType: S
+        - AttributeName: userId
+          AttributeType: S
+        - AttributeName: companyId
+          AttributeType: S
+        - AttributeName: createdAt
+          AttributeType: N
+      KeySchema:
+        - AttributeName: userId
+          KeyType: HASH
+        - AttributeName: itemId
+          KeyType: RANGE
+      StreamSpecification:
+        StreamViewType: NEW_AND_OLD_IMAGES
+      # Set the capacity based on the stage
+      ProvisionedThroughput:
+        ReadCapacityUnits: ${self:custom.tableThroughput}
+        WriteCapacityUnits: ${self:custom.tableThroughput}
+      GlobalSecondaryIndexes:
+        - IndexName: gsiItemsByUserIdAndCreatedAt
+          KeySchema:
+            - AttributeName: userId
+              KeyType: HASH
+            - AttributeName: createdAt
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - itemId
+              - itemData
+              - itemStatus
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+              - companyId
+              - entityId
+              - itemScope
+            ProjectionType: INCLUDE
+          ProvisionedThroughput:
+            ReadCapacityUnits: ${self:custom.tableThroughput}
+            WriteCapacityUnits: ${self:custom.tableThroughput}
+        - IndexName: gsiItemsByCompanyIdAndItemId
+          KeySchema:
+          - AttributeName: companyId
+            KeyType: HASH
+          - AttributeName: itemId
+            KeyType: RANGE  
+          Projection:
+            NonKeyAttributes:
+              - itemId
+              - itemData
+              - itemStatus
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+              - companyId
+              - entityId
+              - itemScope
+            ProjectionType: INCLUDE
+          # Set the capacity based on the stage
+          ProvisionedThroughput:
+            ReadCapacityUnits: ${self:custom.tableThroughput}
+            WriteCapacityUnits: ${self:custom.tableThroughput}
+  AuditTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ${self:custom.auditTableName}
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: companyId
+          AttributeType: S
+        - AttributeName: itemId
+          AttributeType: S
+      KeySchema:
+        - AttributeName: companyId
+          KeyType: HASH
+        - AttributeName: itemId
+          KeyType: RANGE  
+  PaymentsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ${self:custom.paymentsTableName}
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: itemId
+          AttributeType: S
+        - AttributeName: createdBy
+          AttributeType: S
+        - AttributeName: createdAt
+          AttributeType: N
+        - AttributeName: createdAtDate
+          AttributeType: S
+        - AttributeName: itemStatus
+          AttributeType: S
+      KeySchema:
+        - AttributeName: itemId
+          KeyType: HASH
+      StreamSpecification:
+          StreamViewType: NEW_AND_OLD_IMAGES
+      GlobalSecondaryIndexes:
+        - IndexName: gsiItemsByCreatedByAndCreatedAt
+          KeySchema:
+            - AttributeName: createdBy
+              KeyType: HASH
+            - AttributeName: createdAt
+              KeyType: RANGE
+          Projection:
+            NonKeyAttributes:
+              - itemId
+              - itemData
+              - itemStatus
+              - createdAt
+              - modifiedAt
+              - createdBy
+              - modifiedBy
+              - entityId
+              - itemScope
+            ProjectionType: INCLUDE
+        - IndexName: gsiItemsByCreatedAtDateAndItemId
+          KeySchema:
+            - AttributeName: createdAtDate
+              KeyType: HASH
+            - AttributeName: itemId
+              KeyType: RANGE
+          Projection:
+            ProjectionType: ALL
+        - IndexName: gsiItemsByItemStatusAndItemId
+          KeySchema:
+            - AttributeName: itemStatus
+              KeyType: HASH
+            - AttributeName: itemId
+              KeyType: RANGE
+          Projection:
+            ProjectionType: ALL
+        - IndexName: gsiItemsByItemStatusAndCreatedAt
+          KeySchema:
+            - AttributeName: itemStatus
+              KeyType: HASH
+            - AttributeName: createdAt
+              KeyType: RANGE
+          Projection:
+            ProjectionType: ALL
+  ExchangeRatesTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ${self:custom.exchangeRatesTableName}
+      AttributeDefinitions:
+        - AttributeName: itemId
+          AttributeType: S
+        - AttributeName: createdAt
+          AttributeType: N
+      KeySchema:
+        - AttributeName: itemId
+          KeyType: HASH
+        - AttributeName: createdAt
+          KeyType: RANGE
+      ProvisionedThroughput:
+        ReadCapacityUnits: ${self:custom.tableThroughput}
+        WriteCapacityUnits: ${self:custom.tableThroughput}
+
+Outputs:
+  JobsTableStreamArn:
+    Value:
+        Fn::GetAtt:
+        - JobsTable
+        - StreamArn
+    Export:
+      Name: ${self:service}-${self:custom.jobsTableName}-StreamArn
+  SettingsTableStreamArn:
+    Value:
+        Fn::GetAtt:
+        - SettingsTable
+        - StreamArn
+    Export:
+      Name: ${self:service}-${self:custom.settingsTableName}-StreamArn
+  BudgetsTableStreamArn:
+    Value:
+        Fn::GetAtt:
+        - BudgetsTable
+        - StreamArn
+    Export:
+      Name: ${self:service}-${self:custom.budgetsTableName}-StreamArn
+  userNotificationsStreamArn:
+    Value:
+      Fn::GetAtt:
+        - UserNotificationsTable
+        - StreamArn
+    Export:
+      Name: ${self:service}-${self:custom.userNotificationsTableName}-StreamArn
+  wsConnectionsStreamArn:
+    Value:
+      Fn::GetAtt:
+        - wsConnectionsTable
+        - StreamArn
+    Export:
+      Name: ${self:service}-${self:custom.wsConnectionsTableName}-StreamArn
+  LedgerTableStreamArn:
+    Value:
+        Fn::GetAtt:
+        - LedgerTable
+        - StreamArn
+    Export:
+      Name: ${self:service}-${self:custom.ledgerTableName}-StreamArn
+  CompanyProvidersTableStreamArn:
+    Value:
+        Fn::GetAtt:
+        - CompanyProvidersTable
+        - StreamArn
+    Export:
+      Name: ${self:service}-${self:custom.companyProvidersTableName}-StreamArn
+  PaymentsTableStreamArn:
+    Value:
+        Fn::GetAtt:
+        - PaymentsTable
+        - StreamArn
+    Export:
+      Name: ${self:service}-${self:custom.paymentsTableName}-StreamArn
+  CustomersTableStreamArn:
+    Value:
+        Fn::GetAtt:
+        - customersTable
+        - StreamArn
+    Export:
+      Name: ${self:service}-${self:custom.customersTable}-StreamArn
+  BidsTableStreamArn:
+    Value:
+        Fn::GetAtt:
+        - BidsTable
+        - StreamArn
+    Export:
+      Name: ${self:service}-${self:custom.bidsTableName}-StreamArn
+ 

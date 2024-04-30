@@ -1,0 +1,9 @@
+{
+    "body": "{\"customerName\":\"StokeCo\",\"userEmail\":\"joe@stokeco.com\",\"userName\":\"Joe Smoot\"}",
+    "requestContext": {
+        "identity": {
+            "cognitoIdentityId": null,
+            "cognitoAuthenticationProvider": "JEST-TEST-USER-SUB-0987:username"
+        }
+    }
+}

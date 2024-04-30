@@ -1,0 +1,12 @@
+{
+    "request": {
+        "userAttributes": {
+            "email": "testuser@example.com",
+            "account_type": "freemium"
+        },
+        "validationData": {
+            "invitationId": "192baa5085bddc6a1d53eb3f7ed05dd2463e65e0d9fc045f447fb7a68ff69e72ad3728565cad6b7ce1e093f942400605"
+        }
+    },
+    "response": {}
+}

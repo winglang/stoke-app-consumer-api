@@ -1,0 +1,34 @@
+{
+  "createdAt": 1568576154264,
+  "createdBy": "offlineContext_cognitoIdentityId",
+  "itemData": {
+    "completion_rate": 93,
+    "country": "Algeria",
+    "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "sign": "$"
+    },
+    "freelancer_id": "083dedf4-d7f0-11e9-85af-9d9735b19d87",
+    "hourly_rate": {
+      "max": 72,
+      "min": 60
+    },
+    "img": "https://s3.amazonaws.com/uifaces/faces/twitter/danvernon/128.jpg",
+    "itemId": "DEMO_GENERATOR_083dedf4-d7f0-11e9-85af-9d9735b19d87",
+    "name": "Alf Yundt",
+    "on_budget": 87,
+    "on_time": 99,
+    "platform": "Upwork",
+    "rating": 3,
+    "skills": [
+
+    ],
+    "timezone": "+ 2",
+    "username": "Cyril.Bergstrom73"
+  },
+  "itemId": "DEMO_GENERATOR_083dedf4-d7f0-11e9-85af-9d9735b19d87",
+  "modifiedAt": 1568576154264,
+  "modifiedBy": "offlineContext_cognitoIdentityId",
+  "userId": "offlineContext_cognitoIdentityId"
+}

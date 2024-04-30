@@ -1,0 +1,25 @@
+Resources:
+  CognitoSesConfigurationSet:
+    Type: AWS::SES::ConfigurationSet
+    Properties:
+      Name: ${self:custom.stage}-cognito-ses-configuration-set
+      SendingOptions:
+        SendingEnabled: true
+
+  CognitoSesConfigurationSetEventDestination:
+    Type: AWS::SES::ConfigurationSetEventDestination
+    Properties:
+      ConfigurationSetName: !Ref CognitoSesConfigurationSet
+      EventDestination:
+        Enabled: true
+        SnsDestination:
+          TopicARN: !Ref CognitoSesSnsTopic
+        MatchingEventTypes:
+          - send
+          - reject
+          - bounce
+          - complaint
+          - delivery
+          - renderingFailure
+          - deliveryDelay
+          - subscription

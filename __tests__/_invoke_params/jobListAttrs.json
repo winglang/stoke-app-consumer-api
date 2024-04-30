@@ -1,0 +1,15 @@
+{
+    "requestContext": {
+        "identity": {
+            "cognitoIdentityId1": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "cognitoIdentityId": "us-east-1:5ba21b98-61e7-4bd5-b9f8-d0a985d3e9e8"
+        }
+    },
+    "queryStringParameters": {
+        "companyId1": "BENESHf81f1020-c2d5-11eb-8c02-8b2c51cad23c",
+        "companyId": "ZENTITYb1f80eb0-957c-11ec-9d99-ff30c1bb35c8",
+        "type": "jobsPage",
+        "filterKey": "active",
+        "paginate": true
+    }
+}

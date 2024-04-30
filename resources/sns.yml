@@ -1,0 +1,55 @@
+Resources:
+  #Talent Interact Notifications SNS Topic
+  InteractTalentTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      TopicName: ${self:custom.interactTalentSnsTopic}
+  #Payment Requests Rejection Notifications SNS Topic
+  RejectRequestPaymentTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      TopicName: ${self:custom.rejectRequestPaymentSnsTopic}
+  #Legal Entities Notifications SNS Topic
+  LegalEntitiesSnsTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      TopicName: ${self:custom.legalEntitiesSnsTopic}
+  #Jobs Flow Notifications SNS Topic
+  JobsFlowSnsTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      TopicName: ${self:custom.jobsFlowSnsTopic}
+  #Job Bids Notifications SNS Topic
+  BidsSnsTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      TopicName: ${self:custom.bidsSnsTopic}
+  #Authentication Events Notifications SNS Topic
+  AuthSnsTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      TopicName: ${self:custom.authSnsTopic}
+  #User Action Events Notifications SNS Topic
+  UserActionsSnsTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      TopicName: ${self:custom.userActionsSnsTopic}
+  CognitoSesSnsTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      TopicName: ${self:custom.cognitoSesSnsTopic}
+  #Subsrcibe to the above topic
+  MySubscription:
+    Type: AWS::SNS::Subscription
+    Properties:
+      Endpoint: ${self:custom.adminNotificationsEmail}
+      Protocol: email
+      TopicArn: 
+        Ref: InteractTalentTopic
+  RejectRequestPaymentSubscription:
+    Type: AWS::SNS::Subscription
+    Properties:
+      Endpoint: ${self:custom.adminNotificationsEmail}
+      Protocol: email
+      TopicArn: 
+        Ref: RejectRequestPaymentTopic

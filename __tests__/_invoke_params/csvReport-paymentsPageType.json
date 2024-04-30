@@ -1,0 +1,71 @@
+{
+    "requestContext": {
+        "identity": {
+            "cognitoIdentityId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0"
+        }
+    },
+    "body": {
+        "companyId": "BENESHf81f1020-c2d5-11eb-8c02-8b2c51cad23c",
+        "type": "paymentsPage",
+        "filterKey": "active",
+        "tableRequestedFields": [
+            "milestoneId",
+            "providerName",
+            "companyContactEmail",
+            "email",
+            "address",
+            "phone",
+            "talents",
+            "talentName",
+            "providerEmail",
+            "companyTaxId",
+            "location",
+            "hiringManager",
+            "department",
+            "space",
+            "costCenter",
+            "legalEntity",
+            "jobTitle",
+            "jobType",
+            "milestoneTitle",
+            "date",
+            "status",
+            "amount",
+            "currency",
+            "hourlyRate",
+            "plannedHours",
+            "plannedAmount",
+            "approved",
+            "plannedLocal",
+            "startDate",
+            "requestDate",
+            "approveDate",
+            "approvedBy",
+            "localCurrencyType",
+            "requestedHours",
+            "localCurrencyTotal",
+            "paymentStatus",
+            "paymentValueDate",
+            "paymentMethod",
+            "transactionFee",
+            "stokeFee",
+            "customRequested",
+            "customRate",
+            "customPlanned",
+            "comment",
+            "Custom field",
+            "localCurrencySubTotal",
+            "localCurrencyTax",
+            "invoiceNumber",
+            "invoiceDate",
+            "proForma",
+            "invoice"
+        ],
+        "filters": {
+            "hiringManagers": [],
+            "talents": [],
+            "workspaces": [],
+            "milestoneApproveDate": {"from":1661979600000,"to":1664485200000}
+        }
+    }
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "itemId": "user_offlineContext_cognitoIdentityId",
+    "userId": "offlineContext_cognitoIdentityId",
+    "entityId": "offlineContext_entityId",
+    "companyId": "offlineContext_companyId",
+    "itemData": {}
+  },
+  {
+    "itemId": "comp_offlineContext_cognitoIdentityId",
+    "userId": "offlineContext_cognitoIdentityId",
+    "entityId": "offlineContext_cognitoIdentityId",
+    "companyId": "offlineContext_cognitoIdentityId",
+    "itemData": {
+      "legalDocs": {
+        "nda": "/dev-fe-api-jobs/defaults/legalDocs/nda.pdf",
+        "nonCompete": "/dev-fe-api-jobs/defaults/legalDocs/nonCompete.pdf",
+        "ipAssignment": "/dev-fe-api-jobs/defaults/legalDocs/ipAssignment.pdf"
+      },
+      "limitedJobPostCount": 0
+    }
+  }
+]

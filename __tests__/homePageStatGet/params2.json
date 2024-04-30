@@ -1,0 +1,10 @@
+{
+    "requestContext": {
+        "identity": {
+            "cognitoIdentityId": "us-east-1:fe5ee5f9-9382-4204-97a2-e61ceeac4db1"
+        }
+    },
+    "queryStringParameters": {
+        "companyId": "NEWCOMPANYb1a9a4f0-7f48-11eb-9723-91c03263c049"
+    }
+}

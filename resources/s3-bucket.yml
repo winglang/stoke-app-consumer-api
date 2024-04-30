@@ -1,0 +1,23 @@
+Resources:
+  JobsBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: ${self:custom.jobsBucketName}
+      CorsConfiguration:
+        CorsRules:
+          -
+            AllowedOrigins:
+              - '*'
+            AllowedHeaders:
+              - '*'
+            AllowedMethods:
+              - GET
+              - PUT
+              - POST
+              - DELETE
+              - HEAD
+            MaxAge: 3000
+Outputs:
+  JobsBucketName:
+    Value:
+      Ref: JobsBucket

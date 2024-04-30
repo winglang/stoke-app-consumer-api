@@ -1,0 +1,1170 @@
+{
+    "jobs": [
+        {
+            "itemStatus": "budgetRequest",
+            "itemData": {
+                "jobStartDate": "2021-06-29",
+                "jobTitle": "User1 First Job",
+                "talentId": "talent_provider_ARIELTALEN689d2280-cde7-11eb-b476-db729ef8421atalent_689d4990-cde7-11eb-b476-db729ef8421a",
+                "totalBudget": 100100
+            },
+            "itemId": "job_10e12d50-d8f2-11eb-a3a4-a5f2b44d3d5e",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:74d88671-7900-4100-9282-ae6fdf1a9952",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "Active",
+            "itemData": {
+                "jobStartDate": "2021-06-02",
+                "jobTitle": "Job test #2",
+                "startTime": 1624878856588,
+                "talentId": "talent_provider_ARIELTALEN9cd644d0-c2d6-11eb-b9bc-473b7fa98289talent_9cd66be0-c2d6-11eb-b9bc-473b7fa98289",
+                "totalBudget": 5050
+            },
+            "itemId": "job_1664fe70-c3b0-11eb-b682-9d9fdedba034",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Active",
+            "itemData": {
+                "jobStartDate": "2021-07-04",
+                "jobTitle": "very long long long long long long long long title",
+                "startTime": 1625413235585,
+                "talentId": "talent_provider_ARIELPROVI3b018cd0-d2ab-11eb-98c0-31f17b0b9e5atalent_3b01b3e0-d2ab-11eb-98c0-31f17b0b9e5a",
+                "totalBudget": 4800
+            },
+            "itemId": "job_2f0a7600-dcb8-11eb-b645-ad7d28a5d47f",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:74d88671-7900-4100-9282-ae6fdf1a9952",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "Active",
+            "itemData": {
+                "jobStartDate": "2021-06-30",
+                "jobTitle": "Email Notifications Demo",
+                "startTime": 1625013020529,
+                "talentId": "talent_provider_ARIELTALEN9cd644d0-c2d6-11eb-b9bc-473b7fa98289talent_9cd66be0-c2d6-11eb-b9bc-473b7fa98289",
+                "totalBudget": 18702
+            },
+            "itemId": "job_3a342ac0-d93a-11eb-9722-5bce41f5d91e",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "Active",
+            "itemData": {
+                "jobStartDate": "2021-06-15",
+                "jobTitle": "Example of Provider 2",
+                "startTime": 1623768119501,
+                "talentId": "talent_provider_ARIELTALEN689d2280-cde7-11eb-b476-db729ef8421atalent_689d4990-cde7-11eb-b476-db729ef8421a",
+                "totalBudget": 200
+            },
+            "itemId": "job_879ced00-cde7-11eb-a096-b99f22a08501",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemData": {
+                "bids": {
+                    "wrapperName": "Set",
+                    "values": [
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e3e6d0-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e40de0-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e40de1-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e40de2-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e40de3-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e434f0-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e434f1-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e434f2-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e434f3-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e434f4-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e434f5-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e434f6-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e434f7-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e434f8-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e434f9-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e434fa-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e434fb-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e434fc-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e45c00-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e45c01-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e45c02-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e45c03-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e45c04-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e45c05-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e45c06-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e45c07-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e45c08-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e45c09-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e45c0a-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e45c0b-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e45c0c-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e45c0d-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e48310-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e48311-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e48312-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e48313-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e48314-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e48315-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e48316-ce81-11eb-af0e-196ba25dead5",
+                        "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_talent_provider_DEMO_GENERATORtalent_90e48317-ce81-11eb-af0e-196ba25dead5"
+                    ],
+                    "type": "String"
+                },
+                "currency": "USD",
+                "jobStartDate": "2021-06-16",
+                "jobTitle": "Developing the new Twitter",
+                "talentId": "talent_provider_DEMO_GENERATORtalent_90e48317-ce81-11eb-af0e-196ba25dead5",
+                "totalBudget": 32900
+            },
+            "itemId": "job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:d3f60430-8ed6-4d22-8982-ba73edf8c678",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "Active",
+            "itemData": {
+                "jobStartDate": "2021-06-22",
+                "jobTitle": "Test second job on same talent",
+                "startTime": 1624375745537,
+                "talentId": "talent_provider_ARIELTALEN689d2280-cde7-11eb-b476-db729ef8421atalent_689d4990-cde7-11eb-b476-db729ef8421a",
+                "totalBudget": 1800
+            },
+            "itemId": "job_92c43e90-d36e-11eb-8acd-fb7a9cce41bd",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:d3f60430-8ed6-4d22-8982-ba73edf8c678",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "Active",
+            "itemData": {
+                "jobStartDate": "2021-06-21",
+                "jobTitle": "Test provider counter with invited provider",
+                "startTime": 1624292500023,
+                "talentId": "talent_provider_ARIELPROVI3b018cd0-d2ab-11eb-98c0-31f17b0b9e5atalent_3b01b3e0-d2ab-11eb-98c0-31f17b0b9e5a",
+                "totalBudget": 1550
+            },
+            "itemId": "job_9b489d40-d2ab-11eb-a2c8-e7730b2eaadf",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        }
+    ],
+    "budgetRequests": [
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_10e12d50-d8f2-11eb-a3a4-a5f2b44d3d5e_120efef0-d8f2-11eb-b357-9796c4fe246c",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:74d88671-7900-4100-9282-ae6fdf1a9952",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_10e12d50-d8f2-11eb-a3a4-a5f2b44d3d5e_120efef1-d8f2-11eb-b357-9796c4fe246c",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:74d88671-7900-4100-9282-ae6fdf1a9952",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_10e12d50-d8f2-11eb-a3a4-a5f2b44d3d5e_80d89820-d90e-11eb-852e-05f234dcbd81",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:74d88671-7900-4100-9282-ae6fdf1a9952",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_2f0a7600-dcb8-11eb-b645-ad7d28a5d47f_18586060-dcd2-11eb-9087-e5ea0407fb59",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:74d88671-7900-4100-9282-ae6fdf1a9952",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_2f0a7600-dcb8-11eb-b645-ad7d28a5d47f_1fea6530-dcd2-11eb-9087-e5ea0407fb59",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:74d88671-7900-4100-9282-ae6fdf1a9952",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_2f0a7600-dcb8-11eb-b645-ad7d28a5d47f_33b85bc0-dcba-11eb-9b0d-c980175f6014",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:74d88671-7900-4100-9282-ae6fdf1a9952",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_2f0a7600-dcb8-11eb-b645-ad7d28a5d47f_3f9be060-dcba-11eb-9b0d-c980175f6014",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:74d88671-7900-4100-9282-ae6fdf1a9952",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_2f0a7600-dcb8-11eb-b645-ad7d28a5d47f_75ff29d0-dcda-11eb-a302-75cb4a2b2dd7",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:74d88671-7900-4100-9282-ae6fdf1a9952",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_2f0a7600-dcb8-11eb-b645-ad7d28a5d47f_88177260-dcc8-11eb-b97b-8303df04975f",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:74d88671-7900-4100-9282-ae6fdf1a9952",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_2f0a7600-dcb8-11eb-b645-ad7d28a5d47f_8fe468e0-dcbe-11eb-8115-7987affabb44",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:74d88671-7900-4100-9282-ae6fdf1a9952",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_2f0a7600-dcb8-11eb-b645-ad7d28a5d47f_905f0b90-dcc8-11eb-b97b-8303df04975f",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:74d88671-7900-4100-9282-ae6fdf1a9952",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_2f0a7600-dcb8-11eb-b645-ad7d28a5d47f_95a35b60-dcbe-11eb-8115-7987affabb44",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:74d88671-7900-4100-9282-ae6fdf1a9952",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_197a8281-ce8a-11eb-879d-831ea4e077ce",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:d3f60430-8ed6-4d22-8982-ba73edf8c678",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_197a8282-ce8a-11eb-879d-831ea4e077ce",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:d3f60430-8ed6-4d22-8982-ba73edf8c678",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_197a8283-ce8a-11eb-879d-831ea4e077ce",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:d3f60430-8ed6-4d22-8982-ba73edf8c678",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_197a8284-ce8a-11eb-879d-831ea4e077ce",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:d3f60430-8ed6-4d22-8982-ba73edf8c678",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_197a8285-ce8a-11eb-879d-831ea4e077ce",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:d3f60430-8ed6-4d22-8982-ba73edf8c678",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_197a8286-ce8a-11eb-879d-831ea4e077ce",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:d3f60430-8ed6-4d22-8982-ba73edf8c678",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_197a8287-ce8a-11eb-879d-831ea4e077ce",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:d3f60430-8ed6-4d22-8982-ba73edf8c678",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_197a8288-ce8a-11eb-879d-831ea4e077ce",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:d3f60430-8ed6-4d22-8982-ba73edf8c678",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_197a8289-ce8a-11eb-879d-831ea4e077ce",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:d3f60430-8ed6-4d22-8982-ba73edf8c678",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_197a828a-ce8a-11eb-879d-831ea4e077ce",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:d3f60430-8ed6-4d22-8982-ba73edf8c678",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_197a828b-ce8a-11eb-879d-831ea4e077ce",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:d3f60430-8ed6-4d22-8982-ba73edf8c678",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_29d26650-ce8c-11eb-b4c7-49c71c63cf5d",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:d3f60430-8ed6-4d22-8982-ba73edf8c678",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_3eba45d0-cecb-11eb-8753-6990d0e3897a",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:d3f60430-8ed6-4d22-8982-ba73edf8c678",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_9a894100-cede-11eb-a62c-7d911d472697",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:d3f60430-8ed6-4d22-8982-ba73edf8c678",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_9f6391c0-ce8f-11eb-a33e-d59fc3545440",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:d3f60430-8ed6-4d22-8982-ba73edf8c678",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_9011c9c0-ce81-11eb-a3f7-67b7d0b536c4_f12f7f90-ce8b-11eb-b4c7-49c71c63cf5d",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:d3f60430-8ed6-4d22-8982-ba73edf8c678",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_92c43e90-d36e-11eb-8acd-fb7a9cce41bd_0746a180-de88-11eb-a74b-efd7aefa5db2",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:d3f60430-8ed6-4d22-8982-ba73edf8c678",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_92c43e90-d36e-11eb-8acd-fb7a9cce41bd_0f3c2310-de88-11eb-a74b-efd7aefa5db2",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:d3f60430-8ed6-4d22-8982-ba73edf8c678",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_92c43e90-d36e-11eb-8acd-fb7a9cce41bd_17934ca0-de88-11eb-a74b-efd7aefa5db2",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:d3f60430-8ed6-4d22-8982-ba73edf8c678",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemId": "ms_job_92c43e90-d36e-11eb-8acd-fb7a9cce41bd_188f5ac0-d8f4-11eb-b836-b343d1cc1ded",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:d3f60430-8ed6-4d22-8982-ba73edf8c678",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemData": {
+                "cost": 200,
+                "costLocal": 200,
+                "currency": "USD",
+                "date": "2021-07-06T00:00:00.000Z",
+                "jobId": "job_9b489d40-d2ab-11eb-a2c8-e7730b2eaadf"
+            },
+            "itemId": "ms_job_9b489d40-d2ab-11eb-a2c8-e7730b2eaadf_aa427a80-de9c-11eb-b9e4-bf7ce4b22636",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemData": {
+                "cost": 200,
+                "costLocal": 200,
+                "currency": "USD",
+                "date": "2021-07-06T00:00:00.000Z",
+                "jobId": "job_9b489d40-d2ab-11eb-a2c8-e7730b2eaadf"
+            },
+            "itemId": "ms_job_9b489d40-d2ab-11eb-a2c8-e7730b2eaadf_b24eb860-de9c-11eb-b9e4-bf7ce4b22636",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemData": {
+                "cost": 250,
+                "costLocal": 250,
+                "currency": "USD",
+                "date": "2021-07-06T00:00:00.000Z",
+                "jobId": "job_9b489d40-d2ab-11eb-a2c8-e7730b2eaadf"
+            },
+            "itemId": "ms_job_9b489d40-d2ab-11eb-a2c8-e7730b2eaadf_ba42b350-de9c-11eb-b9e4-bf7ce4b22636",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemData": {
+                "cost": 300,
+                "costLocal": 300,
+                "currency": "USD",
+                "date": "2021-07-06T00:00:00.000Z",
+                "jobId": "job_9b489d40-d2ab-11eb-a2c8-e7730b2eaadf"
+            },
+            "itemId": "ms_job_9b489d40-d2ab-11eb-a2c8-e7730b2eaadf_c0dceaa0-de9c-11eb-b9e4-bf7ce4b22636",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "budgetRequest",
+            "itemData": {
+                "cost": 500,
+                "costLocal": 500,
+                "currency": "USD",
+                "date": "2021-07-06T00:00:00.000Z",
+                "jobId": "job_9b489d40-d2ab-11eb-a2c8-e7730b2eaadf"
+            },
+            "itemId": "ms_job_9b489d40-d2ab-11eb-a2c8-e7730b2eaadf_c9101170-de9c-11eb-b9e4-bf7ce4b22636",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        }
+    ],
+    "talents": [
+        {
+            "itemStatus": "registered",
+            "itemData": {
+                "legalDocuments": [],
+                "firstName": "Ariel",
+                "lastName": "Talent1",
+                "isProviderSelfEmployedTalent": true,
+                "talentProfileData": {
+                    "country": "IL"
+                },
+                "providerId": "provider_ARIELTALEN9cd644d0-c2d6-11eb-b9bc-473b7fa98289",
+                "isHireByStoke": false,
+                "email": "ariel+provider@stoketalent.com",
+                "providerName": "Ariel Talent1"
+            },
+            "modifiedAt": 1625012968975,
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "createdAt": 1622551257502,
+            "itemId": "talent_provider_ARIELTALEN9cd644d0-c2d6-11eb-b9bc-473b7fa98289talent_9cd66be0-c2d6-11eb-b9bc-473b7fa98289",
+            "createdBy": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "modifiedBy": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0"
+        },
+        {
+            "itemStatus": "registered",
+            "itemData": {
+                "legalDocuments": [],
+                "firstName": "Ariel",
+                "lastName": "provider3",
+                "isProviderSelfEmployedTalent": true,
+                "talentProfileData": {
+                    "country": "IL"
+                },
+                "providerId": "provider_ARIELPROVI3b018cd0-d2ab-11eb-98c0-31f17b0b9e5a",
+                "isHireByStoke": false,
+                "email": "ariel+provider3@stoketalent.com",
+                "providerName": "Ariel provider3"
+            },
+            "modifiedAt": 1625397317964,
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "createdAt": 1624291843614,
+            "itemId": "talent_provider_ARIELPROVI3b018cd0-d2ab-11eb-98c0-31f17b0b9e5atalent_3b01b3e0-d2ab-11eb-98c0-31f17b0b9e5a",
+            "createdBy": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "modifiedBy": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0"
+        },
+        {
+            "itemStatus": "registered",
+            "itemData": {
+                "name": "Justine Mraz",
+                "isHireByStoke": false,
+                "isProviderSelfEmployedTalent": false,
+                "talentProfileData": {
+                    "country": "IN",
+                    "freelancer_id": "90e48317-ce81-11eb-af0e-196ba25dead5",
+                    "img": "https://s3.amazonaws.com/uifaces/faces/twitter/itskawsar/128.jpg",
+                    "languages": [
+                        {
+                            "name": "US English",
+                            "level": 0
+                        }
+                    ],
+                    "timezone": 4,
+                    "platform_specific": {
+                        "score_last3months": {
+                            "all": 79,
+                            "completion_rate": 0.8983984953132353,
+                            "incomplete": 1,
+                            "on_time": 0.5682257510375763,
+                            "reviews": 93,
+                            "category_ratings": {
+                                "professionalism": 2.1959472429087956,
+                                "hire_again": 0.6273320092825663,
+                                "communication": 0.48878047594471896,
+                                "expertise": 1.5481594769052187,
+                                "quality": 3.334161627040153
+                            },
+                            "incomplete_reviews": 1,
+                            "overall": 3.3444910755224355,
+                            "positive": 53,
+                            "complete": 98,
+                            "on_budget": 0.6929801378512679
+                        },
+                        "score_last12months": {
+                            "all": 96,
+                            "completion_rate": 0.5220782128238067,
+                            "incomplete": 2,
+                            "on_time": 0.7929332220767884,
+                            "reviews": 34,
+                            "category_ratings": {
+                                "professionalism": 2.11465473722827,
+                                "hire_again": 1.1801677104678987,
+                                "communication": 1.828378911287366,
+                                "expertise": 3.7102252811556724,
+                                "quality": 3.0948238409276008
+                            },
+                            "incomplete_reviews": 1,
+                            "overall": 1.5350334568123891,
+                            "positive": 72,
+                            "complete": 39,
+                            "on_budget": 0.5369559331301872
+                        }
+                    },
+                    "portfolios": {
+                        "icon": "https://www.f-cdn.com/assets/compat/en/assets/freelancer-logo-icon.svg",
+                        "title": "freelancer.com",
+                        "url": "https://www.freelancer.com/freelancers/"
+                    },
+                    "about": "hi \n\ni am spacial for all about demo generator and have relevant experience.",
+                    "description": "hi \n\ni am spacial for all about demo generator and have relevant experience.",
+                    "title": "node.js",
+                    "platform": "Fiverr",
+                    "skills": [
+                        {
+                            "name": "node.js",
+                            "id": 0,
+                            "category": "Factors",
+                            "title": "node.js"
+                        },
+                        {
+                            "name": "Security",
+                            "id": 1,
+                            "category": "Creative",
+                            "title": "Security"
+                        },
+                        {
+                            "name": "Response",
+                            "id": 2,
+                            "category": "Applications",
+                            "title": "Response"
+                        },
+                        {
+                            "name": "Integration",
+                            "id": 3,
+                            "category": "Security",
+                            "title": "Integration"
+                        },
+                        {
+                            "name": "Division",
+                            "id": 4,
+                            "category": "Response",
+                            "title": "Division"
+                        },
+                        {
+                            "name": "Data",
+                            "id": 5,
+                            "category": "Communications",
+                            "title": "Data"
+                        },
+                        {
+                            "name": "Data",
+                            "id": 6,
+                            "category": "Group",
+                            "title": "Data"
+                        },
+                        {
+                            "name": "Tactics",
+                            "id": 7,
+                            "category": "Program",
+                            "title": "Tactics"
+                        },
+                        {
+                            "name": "Security",
+                            "id": 8,
+                            "category": "Operations",
+                            "title": "Security"
+                        },
+                        {
+                            "name": "Optimization",
+                            "id": 9,
+                            "category": "Identity",
+                            "title": "Optimization"
+                        },
+                        {
+                            "name": "Intranet",
+                            "id": 10,
+                            "category": "Optimization",
+                            "title": "Intranet"
+                        }
+                    ],
+                    "itemId": "talent_provider_DEMO_GENERATORtalent_90e48317-ce81-11eb-af0e-196ba25dead5",
+                    "score": {
+                        "all": 190,
+                        "professionalism": 2.9275464584482003,
+                        "rating": 1.7181307518978661,
+                        "incomplete_reviews": 1,
+                        "positive": 1.5664118782236303,
+                        "expertise": 0.44278113022719334,
+                        "quality": 4.079833080067884,
+                        "completion_rate": 0.9717314487632509,
+                        "hire_again": 0.06847810937041565,
+                        "on_time": 0.5790350119547077,
+                        "reviews": 91,
+                        "communication": 1.266767425914609,
+                        "complete": 38,
+                        "on_budget": 0.7239034390981295
+                    },
+                    "top_skills": [
+                        {
+                            "category": "Integration",
+                            "name": "node.js"
+                        },
+                        {
+                            "category": "Mobility",
+                            "name": "Usability"
+                        },
+                        {
+                            "category": "Infrastructure",
+                            "name": "Interactions"
+                        }
+                    ],
+                    "portfolio": "https://www.freelancer.com/freelancers/",
+                    "hourly_rate": {
+                        "max": 111,
+                        "min": 90
+                    },
+                    "name": "Justine Mraz",
+                    "currency": {
+                        "name": "US Dollar",
+                        "sign": "$",
+                        "code": "USD"
+                    },
+                    "username": "Elizabeth79"
+                },
+                "providerId": "provider_DEMO_GENERATOR",
+                "providerName": "Marketplaces"
+            },
+            "modifiedAt": 1623837809821,
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "createdAt": 1623837809821,
+            "itemId": "talent_provider_DEMO_GENERATORtalent_90e48317-ce81-11eb-af0e-196ba25dead5",
+            "createdBy": "us-east-1:d3f60430-8ed6-4d22-8982-ba73edf8c678",
+            "modifiedBy": "us-east-1:d3f60430-8ed6-4d22-8982-ba73edf8c678"
+        },
+        {
+            "itemStatus": "registered",
+            "itemData": {
+                "legalDocuments": [],
+                "firstName": "Ariel",
+                "lastName": "Talent2",
+                "isProviderSelfEmployedTalent": true,
+                "talentProfileData": {
+                    "category": "engineer",
+                    "skills": [
+                        {
+                            "sourceId": 15,
+                            "id": "engineer_.net",
+                            "sourceName": "freelancer",
+                            "title": ".net"
+                        },
+                        {
+                            "sourceId": 500,
+                            "id": "engineer_node.js",
+                            "sourceName": "freelancer",
+                            "title": "node.js"
+                        },
+                        {
+                            "sourceId": 1314,
+                            "id": "engineer_react native",
+                            "sourceName": "freelancer",
+                            "title": "react native"
+                        },
+                        {
+                            "sourceId": 759,
+                            "id": "engineer_react.js",
+                            "sourceName": "freelancer",
+                            "title": "react.js"
+                        }
+                    ],
+                    "country": "IL"
+                },
+                "providerId": "provider_ARIELTALEN689d2280-cde7-11eb-b476-db729ef8421a",
+                "isHireByStoke": false,
+                "email": "ariel+provider2@stoketalent.com",
+                "providerName": "Ariel Talent2"
+            },
+            "modifiedAt": 1624981976523,
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "createdAt": 1623767934121,
+            "itemId": "talent_provider_ARIELTALEN689d2280-cde7-11eb-b476-db729ef8421atalent_689d4990-cde7-11eb-b476-db729ef8421a",
+            "createdBy": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "modifiedBy": "us-east-1:74d88671-7900-4100-9282-ae6fdf1a9952"
+        }
+    ],
+    "milestones": [
+        {
+            "itemStatus": "Pending Approval",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_0a4a2c10-cd46-11eb-b809-ef508621d8d1",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Pending Approval",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_112c1df0-cd4a-11eb-82da-35e25e8960eb",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Pending Approval",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_1797d920-c3b0-11eb-b27d-97798856990e",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Pending Approval",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_1797d923-c3b0-11eb-b27d-97798856990e",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Pending Approval",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_1797d924-c3b0-11eb-b27d-97798856990e",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Pending Approval",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_17fc2f20-cd46-11eb-b809-ef508621d8d1",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Pending Approval",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_18151180-cd4a-11eb-82da-35e25e8960eb",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Requested",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_195f2990-d812-11eb-a79c-718dfc5935bf",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Pending Approval",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_1f2ceef0-cde7-11eb-8dce-bd0ed5a13eb9",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Requested",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_2a27bb70-d812-11eb-a79c-718dfc5935bf",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Requested",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_3097e010-d813-11eb-b43a-bfd2cdfc4a45",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Requested",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_39df8420-d813-11eb-b43a-bfd2cdfc4a45",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Requested",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_3c544a20-d812-11eb-a79c-718dfc5935bf",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Requested",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_3e6e1de0-d81c-11eb-b202-25dd94b9b8f7",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Requested",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_432d9830-d810-11eb-9b0f-f9bfead7cef3",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Requested",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_4628e060-d81c-11eb-b202-25dd94b9b8f7",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Requested",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_4711cfe0-d813-11eb-b43a-bfd2cdfc4a45",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Pending Approval",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_472b5fe0-cde2-11eb-a19e-29f44aefbc3c",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Requested",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_4ce9a8f0-d810-11eb-9b0f-f9bfead7cef3",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Requested",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_4d6746f0-d81c-11eb-b202-25dd94b9b8f7",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Requested",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_5204bc80-d81f-11eb-b554-5f94b1c9d3dc",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Requested",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_5821fda0-d809-11eb-8232-dde6a1f13db8",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Requested",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_59c87fb0-d81f-11eb-b554-5f94b1c9d3dc",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Requested",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_62285bd0-d81f-11eb-95ae-136dd893379f",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Pending Approval",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_70d544e0-cd43-11eb-8ec5-b344180544f8",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Requested",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_72576dd0-d814-11eb-942e-19c803e9eda4",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Pending Approval",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_7843e330-cd43-11eb-8ec5-b344180544f8",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Requested",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_7e87b2e0-d814-11eb-942e-19c803e9eda4",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Pending Approval",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_86eed6f0-cd1c-11eb-80d7-3f56412c4355",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Requested",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_890f4010-d80b-11eb-9343-bb846ba197c1",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Requested",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_8933a1e0-d814-11eb-942e-19c803e9eda4",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Requested",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_9b1a9080-d81e-11eb-b554-5f94b1c9d3dc",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Requested",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_a315b760-d81e-11eb-b554-5f94b1c9d3dc",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Pending Approval",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_a73d7320-cd1d-11eb-ad64-b3a5d69231ee",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Requested",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_a8030200-d81e-11eb-b554-5f94b1c9d3dc",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Requested",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_ad318fa0-d803-11eb-9830-f1aacb78c7c9",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Pending Approval",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_c02a1700-cd25-11eb-96a8-5b711ca50e09",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Requested",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_c1147550-d80d-11eb-b6b7-376023594ad9",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Pending Approval",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_c69771f0-cd25-11eb-96a8-5b711ca50e09",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Pending Approval",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_e7cd7e20-cdb9-11eb-aa99-af6290939d73",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Pending Approval",
+            "itemId": "ms_job_1664fe70-c3b0-11eb-b682-9d9fdedba034_ec050150-d801-11eb-a9cf-63aaf2826466",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Requested",
+            "itemData": {
+                "actualCost": 200,
+                "actualRequestCost": 200,
+                "cost": 0,
+                "date": "2021-07-06T00:00:00.000Z",
+                "jobId": "job_2f0a7600-dcb8-11eb-b645-ad7d28a5d47f",
+                "providerData": {
+                    "taxInfo": {
+                        "paymentCurrency": "USD",
+                        "total": 200
+                    }
+                }
+            },
+            "itemId": "ms_job_2f0a7600-dcb8-11eb-b645-ad7d28a5d47f_0efdfc10-de9d-11eb-acec-490e2c33f9e2",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:74d88671-7900-4100-9282-ae6fdf1a9952",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "Requested",
+            "itemData": {
+                "actualCost": 678,
+                "actualRequestCost": 678,
+                "cost": 0,
+                "date": "2021-07-06T00:00:00.000Z",
+                "jobId": "job_2f0a7600-dcb8-11eb-b645-ad7d28a5d47f",
+                "providerData": {
+                    "taxInfo": {
+                        "paymentCurrency": "USD",
+                        "total": 678
+                    }
+                }
+            },
+            "itemId": "ms_job_2f0a7600-dcb8-11eb-b645-ad7d28a5d47f_1737b290-de9d-11eb-acec-490e2c33f9e2",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:74d88671-7900-4100-9282-ae6fdf1a9952",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "Pending Approval",
+            "itemId": "ms_job_2f0a7600-dcb8-11eb-b645-ad7d28a5d47f_3040ac10-dcb8-11eb-8d2d-dba7f1262dd9",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:74d88671-7900-4100-9282-ae6fdf1a9952",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "Pending Approval",
+            "itemId": "ms_job_2f0a7600-dcb8-11eb-b645-ad7d28a5d47f_3040ac11-dcb8-11eb-8d2d-dba7f1262dd9",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:74d88671-7900-4100-9282-ae6fdf1a9952",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "Pending Approval",
+            "itemId": "ms_job_2f0a7600-dcb8-11eb-b645-ad7d28a5d47f_3040ac12-dcb8-11eb-8d2d-dba7f1262dd9",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:74d88671-7900-4100-9282-ae6fdf1a9952",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "Pending Approval",
+            "itemId": "ms_job_2f0a7600-dcb8-11eb-b645-ad7d28a5d47f_3040ac13-dcb8-11eb-8d2d-dba7f1262dd9",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:74d88671-7900-4100-9282-ae6fdf1a9952",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "Pending Approval",
+            "itemId": "ms_job_2f0a7600-dcb8-11eb-b645-ad7d28a5d47f_4eaa0d80-dcb9-11eb-9b0d-c980175f6014",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:74d88671-7900-4100-9282-ae6fdf1a9952",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "Pending Approval",
+            "itemId": "ms_job_2f0a7600-dcb8-11eb-b645-ad7d28a5d47f_a9545970-dcb9-11eb-9b0d-c980175f6014",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:74d88671-7900-4100-9282-ae6fdf1a9952",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "Pending Approval",
+            "itemId": "ms_job_3a342ac0-d93a-11eb-9722-5bce41f5d91e_3aed68a1-d93a-11eb-8c31-e30874ad184a",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "Pending Approval",
+            "itemId": "ms_job_3a342ac0-d93a-11eb-9722-5bce41f5d91e_3aed68a2-d93a-11eb-8c31-e30874ad184a",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "Pending Approval",
+            "itemId": "ms_job_3a342ac0-d93a-11eb-9722-5bce41f5d91e_3aed68a3-d93a-11eb-8c31-e30874ad184a",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "Pending Approval",
+            "itemId": "ms_job_3a342ac0-d93a-11eb-9722-5bce41f5d91e_58b80e80-d93a-11eb-9ed1-45de8b2d59d4",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "RD8a95db10-ce7e-11eb-b058-b1fe934d5045"
+        },
+        {
+            "itemStatus": "Pending Approval",
+            "itemId": "ms_job_879ced00-cde7-11eb-a096-b99f22a08501_88e5e7c0-cde7-11eb-b15b-4b5cee3a0093",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Pending Approval",
+            "itemId": "ms_job_879ced00-cde7-11eb-a096-b99f22a08501_88e5e7c1-cde7-11eb-b15b-4b5cee3a0093",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        },
+        {
+            "itemStatus": "Requested",
+            "itemId": "ms_job_879ced00-cde7-11eb-a096-b99f22a08501_d7121480-cede-11eb-9b04-d3194b69e6b6",
+            "companyId": "JEST-TEST-HOME-PAGE-STATA-ID-JOBS-COMPANY-ID-1",
+            "userId": "us-east-1:77ed546c-3115-4eb8-94c9-82f9f547b0e0",
+            "entityId": "BENESHf846e370-c2d5-11eb-8c02-8b2c51cad23c"
+        }
+    ],
+    "budgetByJob": [],
+    "bids": [],
+    "jobsCounter": {
+        "activeJobs": 6,
+        "newJobsThisWeek": 1
+    },
+    "talentsCounter": {
+        "activeTalents": 3,
+        "newTalentsThisWeek": 1
+    }
+}

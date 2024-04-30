@@ -1,0 +1,12 @@
+{
+    "body": "{\"customerName\":\"StokeCo\",\"userEmail\":\"joe@stokeco.com \",\"userName\":\"Joe Smoot\",\"entityName\":\"stoke\"}",
+    "requestContext": {
+        "identity": {
+            "cognitoIdentityId": "JEST-TEST-USER-SUB-0987",
+            "cognitoAuthenticationProvider": "JEST-TEST-USER-SUB-0987:username"
+        }
+    },
+    "queryStringParameters": {
+        "entityId": ""
+    }
+}

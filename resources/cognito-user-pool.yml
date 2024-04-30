@@ -1,0 +1,199 @@
+Resources:
+  CognitoUserPoolConsumerUserPool:
+    Type: AWS::Cognito::UserPool
+    Properties:
+      UserPoolName: ${self:custom.consumerUserPoolName}
+      UsernameAttributes:
+        - email
+      AutoVerifiedAttributes:
+        - email
+      UserAttributeUpdateSettings:
+        AttributesRequireVerificationBeforeUpdate:
+          - email
+      EmailConfiguration:
+        EmailSendingAccount: DEVELOPER
+        From: no-reply <no-reply-ent@fiverr.com>
+        ReplyToEmailAddress: no-reply-ent@fiverr.com
+        ConfigurationSet: !Ref CognitoSesConfigurationSet
+        SourceArn: 
+          Fn::Join: 
+            - ':'
+            - - 'arn:aws:ses'
+              - Ref: AWS::Region
+              - Ref: AWS::AccountId
+              - 'identity/no-reply-ent@fiverr.com'
+      Policies:
+        PasswordPolicy:
+          MinimumLength: 8
+          RequireLowercase: True
+          RequireNumbers: True
+          RequireSymbols: True
+          RequireUppercase: True                            
+
+  CognitoUserPoolCrossCompanyUserPool:
+    Type: AWS::Cognito::UserPool
+    Properties:
+      UserPoolName: ${self:custom.crossCompanyUserPoolName}
+      AliasAttributes:
+        - preferred_username
+      AutoVerifiedAttributes:
+        - email
+      EmailConfiguration:
+        EmailSendingAccount: DEVELOPER
+        From: no-reply <no-reply-ent@fiverr.com>
+        ReplyToEmailAddress: no-reply-ent@fiverr.com
+        SourceArn: 
+          Fn::Join: 
+            - ':'
+            - - 'arn:aws:ses'
+              - Ref: AWS::Region
+              - Ref: AWS::AccountId
+              - 'identity/no-reply-ent@fiverr.com'
+      Policies:
+        PasswordPolicy:
+          MinimumLength: 8
+          RequireLowercase: True
+          RequireNumbers: True
+          RequireSymbols: True
+          RequireUppercase: True                            
+
+  CognitoUserPoolCrossCompanyUserPoolV2:
+    Type: AWS::Cognito::UserPool
+    Properties:
+      UserPoolName: ${self:custom.crossCompanyUserPoolNameV2}
+      AliasAttributes:
+        - preferred_username
+      AutoVerifiedAttributes:
+        - email
+      UsernameConfiguration:
+        CaseSensitive: false
+      EmailConfiguration:
+        EmailSendingAccount: DEVELOPER
+        From: no-reply <no-reply-ent@fiverr.com>
+        ReplyToEmailAddress: no-reply-ent@fiverr.com
+        SourceArn:
+          Fn::Join:
+            - ':'
+            - - 'arn:aws:ses'
+              - Ref: AWS::Region
+              - Ref: AWS::AccountId
+              - 'identity/no-reply-ent@fiverr.com'
+      Policies:
+        PasswordPolicy:
+          MinimumLength: 8
+          RequireLowercase: True
+          RequireNumbers: True
+          RequireSymbols: True
+          RequireUppercase: True                            
+     
+  CognitoUserPoolClient:
+    Type: AWS::Cognito::UserPoolClient
+    Properties:
+      # Generate an app client name based on the stage
+      ClientName: ${self:custom.consumerUserPoolName}-client
+      UserPoolId:
+        Ref: CognitoUserPoolConsumerUserPool
+      ExplicitAuthFlows:
+        - ADMIN_NO_SRP_AUTH
+      GenerateSecret: false
+      PreventUserExistenceErrors: ENABLED
+      EnableTokenRevocation: true
+      AllowedOAuthFlowsUserPoolClient: true
+      CallbackURLs: 
+        - ${self:custom.CONSUMER_URL_DOMAIN}
+        - ${self:custom.CONSUMER_URL_DOMAIN_OLD}
+        - ${self:custom.consumerLocalDomainUrl}
+      LogoutURLs: 
+        - ${self:custom.CONSUMER_URL_DOMAIN}
+        - ${self:custom.CONSUMER_URL_DOMAIN_OLD}
+        - ${self:custom.consumerLocalDomainUrl}
+      AllowedOAuthFlows:
+        - code
+        - implicit
+      AllowedOAuthScopes:
+        - email
+        - openid
+        - profile
+        - aws.cognito.signin.user.admin
+        - ${self:custom.consumerUserPoolAuthResourceServerDomainName}/company
+
+  CognitoCrossCompanyUserPoolClient:
+    Type: AWS::Cognito::UserPoolClient
+    Properties:
+      ClientName: ${self:custom.crossCompanyUserPoolName}-client
+      UserPoolId:
+        Ref: CognitoUserPoolCrossCompanyUserPool
+      ExplicitAuthFlows:
+        - ADMIN_NO_SRP_AUTH
+      GenerateSecret: false
+      PreventUserExistenceErrors: ENABLED
+      EnableTokenRevocation: true
+
+  CognitoCrossCompanyUserPoolClientV2:
+    Type: AWS::Cognito::UserPoolClient
+    Properties:
+      ClientName: ${self:custom.crossCompanyUserPoolName}-client-v2
+      UserPoolId:
+        Ref: CognitoUserPoolCrossCompanyUserPoolV2
+      ExplicitAuthFlows:
+        - ADMIN_NO_SRP_AUTH
+      GenerateSecret: false
+      PreventUserExistenceErrors: ENABLED
+      EnableTokenRevocation: true
+  UserPoolDomain: 
+    Type: AWS::Cognito::UserPoolDomain 
+    Properties:
+      UserPoolId: 
+        Ref: CognitoUserPoolConsumerUserPool 
+      Domain: ${self:custom.consumerUserPoolAuthServerDomainName}
+      CustomDomainConfig: 
+        CertificateArn: 
+          Fn::Join:
+            - ':'
+            - - 'arn:aws:acm'
+              - Ref: AWS::Region
+              - Ref: AWS::AccountId
+              - 'certificate/11da4dca-9f48-488f-b18d-f3791d6a0004'
+  UserPoolResourceServer: 
+    Type: AWS::Cognito::UserPoolResourceServer
+    Properties: 
+      UserPoolId: 
+        Ref: CognitoUserPoolConsumerUserPool 
+      Identifier: ${self:custom.consumerUserPoolAuthResourceServerDomainName} 
+      Name: ${self:custom.consumerUserPoolAuthResourceServerDomainName}
+      Scopes: 
+      - ScopeName: ${self:custom.consumerUserPoolAuthResourceServerCustomCompanyName}  
+        ScopeDescription: "company admin scope" 
+
+  
+# Print out the Id of the User Pool that is created
+Outputs:
+  UserPoolId:
+    Value:
+      Ref: CognitoUserPoolConsumerUserPool
+    Export:
+      Name: ${self:service}-${self:custom.consumerUserPoolName}-UserPoolId
+
+  CrossCompanyUserPoolId:
+    Value:
+      Ref: CognitoUserPoolCrossCompanyUserPool
+    Export:
+      Name: ${self:service}-${self:custom.crossCompanyUserPoolName}-UserPoolId
+
+  CrossCompanyUserPoolIdV2:
+    Value:
+      Ref: CognitoUserPoolCrossCompanyUserPoolV2
+    Export:
+      Name: ${self:service}-${self:custom.crossCompanyUserPoolName}-UserPoolId-V2
+
+  UserPoolClientId:
+    Value:
+      Ref: CognitoUserPoolClient
+
+  CrossCompanyUserPoolClientId:
+    Value:
+      Ref: CognitoCrossCompanyUserPoolClient
+
+  CrossCompanyUserPoolClientIdV2:
+    Value:
+      Ref: CognitoCrossCompanyUserPoolClientV2
