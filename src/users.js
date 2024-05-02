@@ -414,16 +414,16 @@ const getUserInEntityData = (authUser, companiesUsers, companyAdminsUserId = [])
  * @returns {object} results
  */
 // eslint-disable-next-line max-lines-per-function
-const getUsersInEntity = async (event, context) => {
-  const userId = event.requestContext.identity.cognitoIdentityId;
-  const { queryStringParameters } = event;
+const getUsersInEntity = async (context) => {
+  const userId = context.cognitoIdentityId;
+  const { queryStringParameters } = context;
   const { entityId, companyId } = queryStringParameters ? queryStringParameters : {};
   const scope = companyId || entityId
   if (!scope) {
     return responseLib.failure({ message: 'missing entityId or companyId in query string' });
   }
 
-  jsonLogger.info({ type: 'TRACKING', function: 'users::getUsersInEntity', functionName: context.functionName, awsRequestId: context.awsRequestId, userId, entityId, companyId, event: event });
+  jsonLogger.info({ type: 'TRACKING', function: 'users::getUsersInEntity', functionName: context.functionName, awsRequestId: context.awsRequestId, userId, entityId, companyId });
 
   let filterExpression = null
   let expressionAttributeValues = {}
