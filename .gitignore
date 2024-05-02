@@ -18,3 +18,5 @@ tests
 coverage
 .dynamodb/
 *generated_config.json
+
+target/
